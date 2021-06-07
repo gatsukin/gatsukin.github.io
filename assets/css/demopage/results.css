@@ -1,0 +1,317 @@
+.baseInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    width: 100%;
+    height: 205px;
+}
+
+.baseInfo > .top {
+    margin-left: 19vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.baseInfo > .top > .backLink {
+    cursor: pointer;
+    width: 78px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #CACACA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+    margin-right: 117px;
+}
+
+.phoneNum {
+    width: 628px;
+    height: 45px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #646464;
+}
+
+.processbar {
+    margin-top: 20px;
+    margin-left: 19vw;
+    width: 62vw;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.processbarSmall {
+    height: 24px;
+    width: 6.2vw;
+    background: url("../../img/DemoTools/image 32.png") no-repeat center;
+    background-size: contain;
+}
+
+header .mail {
+    margin-left: 19vw !important;
+}
+
+header .phone {
+    margin-right: 19vw;
+}
+
+.logButt {
+    margin-left: auto !important;
+    margin-right: 19vw;
+}
+
+.bottomHeader > .logo {
+    margin-left: 19vw;
+}
+
+.baseInfo > .bottom {
+    margin-left: 19vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#stopCheck {
+    width: 78px;
+    height: 32px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 32px;
+
+    color: #FFFFFF;
+
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+
+    background: #FF5C00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.bottom > .percent {
+    width: 586px;
+    height: 51px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 145px;
+    color: #646464;
+}
+
+.testResultFolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.resultTitle {
+    margin-top: 62px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #DFDFDF;
+    margin-bottom: 15px;
+}
+
+.fresultBoxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.resultBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.resultBox > .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #DFDFDF;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.resDevices {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.resDevice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 752px;
+    width: 326px;
+    margin-bottom: 50px;
+
+}
+
+.resDevice > .logo {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 15px;
+}
+
+.resDevice > .name {
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.99;
+    margin-bottom: 15px;
+}
+
+.resDevice > .resultImg {
+    height: 643px;
+    width: 100%;
+    background: url("../../img/DemoTools/Group 28.png") no-repeat top;
+    background-size: contain;
+}
+
+.resultBox > .bottomText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+    width: 62vw;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .baseInfo > .top {
+        margin-top: 38px;
+        margin-left: 48px;
+    }
+
+    .baseInfo > .top > .backLink {
+        margin-right: 130px;
+    }
+
+    .phoneNum {
+        width: auto;
+    }
+
+    .bottomHeader > .logo {
+        margin-left: 30px !important;
+    }
+
+    .logButt {
+        margin-right: 30px !important;
+    }
+
+    header .mail {
+        margin-left: 30px !important;
+    }
+
+    header .phone {
+        margin-right: 30px;
+    }
+
+    .processbar {
+        margin-left: 48px;
+        width: 89vw;
+        height: 16px;
+    }
+
+    .processbarSmall {
+        width: 8.8vw;
+        height: 18px;
+    }
+
+    .baseInfo > .bottom {
+        margin-left: 48px;
+    }
+
+    .bottom > .percent {
+        width: auto;
+        margin-left: 230px;
+    }
+
+    .resDevices {
+        width: 100%;
+    }
+
+    .resultBox > .bottomText {
+        width: 88vw;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    .baseInfo > .top{
+        margin-left: 0;
+    }
+    .baseInfo > .top > .backLink{
+        display: none;
+    }
+    .phoneNum{
+        width: 100vw    ;
+        text-align: center;
+    }
+    .processbar{
+        margin-left: auto;
+        margin-right: auto;
+        width: 88vw;
+        height: 16px;
+    }
+    .processbarSmall{
+        height: 16px;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .baseInfo > .bottom{
+        margin-left: 16px;
+    }
+    .bottom > .percent{
+        margin-left: 68px;
+    }
+}

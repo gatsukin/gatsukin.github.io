@@ -1,0 +1,709 @@
+@font-face {
+    font-family: "SPro"; /* Имя шрифта */
+    src: url(/fonts/SourceSansPro-Regular.otf); /* Путь к файлу со шрифтом */
+}
+.FTC {
+    background-color: #00c0ef;
+}
+.ROBOKILLER {
+    background-color: #043963;
+}
+
+.NOMOROBO {
+    background-color: #00a65a;
+}
+
+.NOMOROBOTWILIO {
+    background-color: #3d9970;
+}
+
+.WHITEPAGES {
+    background-color: #f39c12;
+}
+
+.WHITEPAGESTWILIO {
+    background-color: #ff851b;
+}
+
+.MARCHEX {
+    background-color: #d9d600;
+}
+
+.IHC {
+    background-color: #00d9b8;
+}
+
+.TRUESPAM {
+    background-color: #a00078;
+}
+
+.CALLCONTROLL {
+    background-color: #c74333;
+}
+
+.mobile-card{
+    border-radius: 5px;
+    height: 18vh;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 92%;
+}
+.desktop-card{
+    cursor: pointer;
+    transition: 300ms;
+}
+.desktop-card:hover{
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 300ms;
+}
+
+#accountchoise{
+    display: none;
+}
+
+.mobile-card > .left {
+    width: 9.3%;
+    height: 100%;
+    padding-left: 3.7%;
+
+}
+.mobile-card > .left > .status{
+    margin-top: 2.2vh;
+    font-size: 2vh;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+}
+.mobile-card > .left > .showsettings{
+    width: 2.7vh;
+    height:  2.7vh;
+    margin-top: 9vh;
+    background: url("../img/settingsbutton@3x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#settingsOptions{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1500;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: white;
+    display: none;
+}
+.mobile-card > .center {
+
+    width: 65.5%;
+    padding-left: 11.7%;
+    color: white;
+    height: 100%;
+}
+.mobile-card > .center > .account{
+    margin-top: 2.2vh;
+    font-size: 14px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 3.05vh;
+}
+.mobile-card > .center > .name{
+    text-align: left;
+    height: auto;
+    margin-bottom: 3.05vh;
+    font-size: 3.2vh;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+}
+
+.mobile-card > .center > .frequency {
+    font-size: 2.4vh;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: left;
+}
+
+.mobile-card > .right {
+    width: 19.1%;
+    font-size: 8.8vh;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    -moz-transform: matrix( 1.00184828397368,0,0,1.00067006646699,0,0);
+    -webkit-transform: matrix( 1.00184828397368,0,0,1.00067006646699,0,0);
+    -ms-transform: matrix( 1.00184828397368,0,0,1.00067006646699,0,0);
+}
+.settingCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.settingCard .abr {
+    height: 153px;
+    padding-top: 33px;
+    font-size: 100px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+
+}
+.settingCard .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 480px;
+    border-radius: 5px;
+}
+
+.settingCard .name {
+    height: 80px;
+    font-size: 24px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.999;
+    text-align: center;
+    transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+    -moz-transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+    -webkit-transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+    -ms-transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+}
+
+.selectorWrapper{
+    cursor: pointer;
+    margin-top: 34px;
+    margin-bottom: 21px;
+    display: block;
+    background-color: rgb(211, 211, 211);
+    width: 120px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.selectorWrapper > .radio {
+    display: none;
+}
+
+.selectorWrapper > .selectorBody{
+    box-sizing: content-box;
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+.selectorWrapper .selectOn{
+
+    left: 0px;
+}
+.selectorWrapper .selectOff{
+
+    left: -70px;
+}
+.selectorWrapper > .selectorBody .on {
+    width: 75px;
+    font-size: 18px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.556;
+    text-align: center;
+    transform: matrix( 1.00182879956742,0,0,1,0,0);
+    -moz-transform: matrix( 1.00182879956742,0,0,1,0,0);
+    -webkit-transform: matrix( 1.00182879956742,0,0,1,0,0);
+    -ms-transform: matrix( 1.00182879956742,0,0,1,0,0);
+
+}
+.selectorWrapper > .selectorBody .off {
+    width: 75px;
+    font-size: 18px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.556;
+    text-align: center;
+    transform: matrix( 1.00182879956742,0,0,1,0,0);
+    -moz-transform: matrix( 1.00182879956742,0,0,1,0,0);
+    -webkit-transform: matrix( 1.00182879956742,0,0,1,0,0);
+    -ms-transform: matrix( 1.00182879956742,0,0,1,0,0);
+}
+.selectorWrapper > .selectorBody .round{
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+
+}
+
+#cardsWrapper .methodSelect {
+    padding-left: 22px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    line-height: 2.571;
+    text-align: left;
+    -moz-transform: matrix( 1.00184846927055,0,0,1.000670066467,0,0);
+    -webkit-transform: matrix( 1.00184846927055,0,0,1.000670066467,0,0);
+    -ms-transform: matrix( 1.00184846927055,0,0,1.000670066467,0,0);
+}
+
+.roundBorder {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.roundBody {
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 6px;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+.methodSelect .selected .roundBody{
+    opacity: 1;
+}
+
+
+.methodSelect input {
+    display: none;
+}
+.methodLabel {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    cursor: pointer;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.dropdownCustom{
+    margin-top: 13px;
+    border-width: 1px;
+    border-style: solid;
+    width: 195px;
+    height: 29px;
+    position: relative;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    line-height: 29px;
+    text-align: center;
+    -moz-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+    -webkit-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+    -ms-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+
+}
+.dropdownCustom .fa-user{
+    position: absolute;
+    left: 12px;
+    top: 7px;
+    width: 9px;
+    height: 10px;
+    z-index: 4;
+}
+.dropdownCustom .fa-clock-o{
+    position: absolute;
+    left: 12px;
+    top: 7px;
+    width: 9px;
+    height: 10px;
+    z-index: 4;
+}
+.dropdownCustom  .selectedAccount {
+
+    padding-left: 28px;
+    padding-right: 28px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 195px;
+    height: 29px;
+    z-index: 1;
+    line-height: 29px;
+    font-size: 14px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    line-height: 29px;
+    text-align: center;
+    -moz-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+    -webkit-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+    -ms-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+    border-radius: 5px;
+}
+.hiddenDrop{
+    opacity: 0;
+}
+.dropdownCustom > .options{
+    height: 29px;
+    overflow: hidden;
+    z-index: -5;
+    opacity: 0;
+
+}
+.dropdownCustom > .selected{
+    opacity: 1;
+    z-index: 1;
+    height: auto;
+}
+.dropdownCustom > .options > .option {
+    padding-left: 28px;
+    padding-right: 28px;
+    overflow: hidden;
+    height: 29px;
+    border: 1px solid white;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+    font-size: 14px;
+    font-family: "SPro";
+    color: rgb(255, 255, 255);
+    line-height: 29px;
+    text-align: center;
+    -moz-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+    -webkit-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+    -ms-transform: matrix( 1.00184846927055,0,0,1.00067005458076,0,0);
+    border-radius: 5px;
+    transition: 300ms;
+}
+.dropdownCustom > .options > .option:hover{
+    background-color: #333;
+    transition: 300ms;
+}
+@media (max-width: 1279px) {
+
+    #accountchoise{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 2000;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+
+    }
+    #accountchoise > .title{
+        width: auto;
+        line-height: 1;
+        margin-top: 6vh;
+        text-align: center;
+        font-size: 4.5vh;
+        font-family: "SPro";
+        color: rgb(204, 204, 204);
+        font-weight: bold;
+        transform: matrix( 1.00184842883549,0,0,0.99884141067331,0,0);
+        -moz-transform: matrix( 1.00184842883549,0,0,0.99884141067331,0,0);
+        -webkit-transform: matrix( 1.00184842883549,0,0,0.99884141067331,0,0);
+        -ms-transform: matrix( 1.00184842883549,0,0,0.99884141067331,0,0);
+        margin-bottom: 4vh;
+        overflow: hidden;
+
+    }
+    #accountchoise > .card > .continueButton{
+        height: 17vh;
+        width: 100%;
+        background-color: #313131;
+        color: white;
+        line-height: 17vh;
+        text-align: center;
+        font-size: 3.6vh;
+        font-family: "SPro";
+        text-align: center;
+        -moz-transform: matrix( 1.00184826371682,0,0,0.99657877234351,0,0);
+        -webkit-transform: matrix( 1.00184826371682,0,0,0.99657877234351,0,0);
+        -ms-transform: matrix( 1.00184826371682,0,0,0.99657877234351,0,0);
+    }
+    #accountchoise >  .card {
+        height: 77vh;
+        background-color: #606060;
+        width: 92vw;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        overflow: hidden;
+    }
+    #accountchoise >  .card > .header {
+        height: 17vh;
+        width: 100%;
+    }
+    #accountchoise >  .card > .header > .icon {
+        height: 17vh;
+        width: 100%;
+        background: url("../img/usericon.png");
+        background-repeat: no-repeat;
+        background-size: 9.6vw  5.7vh;
+        background-position: center;
+    }
+    #accountchoise >  .card > .accounts {
+        height: 43vh;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    #accountchoise >  .card > .accounts > .accountswrapper{
+        height: auto;
+        width: 100%;
+    }
+    #accountchoise >  .card > .accounts > .accountswrapper > .account{
+        height: 8.8vh;
+        line-height: 8.8vh;
+        border-bottom: 1px solid white;
+        font-size: 3.6vh;
+        font-family: "SPro";
+        color: white;
+        font-weight: lighter;
+        text-align: center;
+        -moz-transform: matrix( 1.00321687572497,0,0,0.9995598805902,0,0);
+        -webkit-transform: matrix( 1.00321687572497,0,0,0.9995598805902,0,0);
+        -ms-transform: matrix( 1.00321687572497,0,0,0.9995598805902,0,0);
+        transition: 300ms;
+}
+    #accountchoise >  .card > .accounts > .accountswrapper > .selected{
+        background-color: #333333;
+    }
+    .mobileColumn{
+        padding: 0;
+    }
+    .settingCard{
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .desktop-card{
+        display: none !important;
+    }
+    .mobile-card{
+        display: flex;
+    }
+    #cardsWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #settingsOptions{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    #settingsOptions > .title{
+        width: 28.4vw;
+        line-height: 1;
+        margin-top: 6vh;
+        text-align: center;
+        font-size: 4.5vh;
+        font-family: "SPro";
+        color: rgb(204, 204, 204);
+        font-weight: bold;
+        transform: matrix( 1.00184842883549,0,0,0.99884141067331,0,0);
+        -moz-transform: matrix( 1.00184842883549,0,0,0.99884141067331,0,0);
+        -webkit-transform: matrix( 1.00184842883549,0,0,0.99884141067331,0,0);
+        -ms-transform: matrix( 1.00184842883549,0,0,0.99884141067331,0,0);
+        margin-bottom: 4vh;
+        overflow: hidden;
+
+    }
+
+    #settingsOptions > .card > .continueButton{
+        height: 17vh;
+        width: 100%;
+        background-color: #313131;
+        color: white;
+        line-height: 17vh;
+        text-align: center;
+        font-size: 3.6vh;
+        font-family: "SPro";
+        text-align: center;
+        -moz-transform: matrix( 1.00184826371682,0,0,0.99657877234351,0,0);
+        -webkit-transform: matrix( 1.00184826371682,0,0,0.99657877234351,0,0);
+        -ms-transform: matrix( 1.00184826371682,0,0,0.99657877234351,0,0);
+}
+    #settingsOptions >  .card {
+        height: 77vh;
+        background-color: #606060;
+        width: 92vw;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        overflow: hidden;
+    }
+    #settingsOptions >  .card > .Letter{
+        margin-top: 8vh;
+        font-size: 9vh;
+        font-family: "SPro";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+        transform: matrix( 1.00184828397368,0,0,1.00067006646699,0,0);
+        -moz-transform: matrix( 1.00184828397368,0,0,1.00067006646699,0,0);
+        -webkit-transform: matrix( 1.00184828397368,0,0,1.00067006646699,0,0);
+        -ms-transform: matrix( 1.00184828397368,0,0,1.00067006646699,0,0);
+    }
+
+    #settingsOptions >  .card > .selector{
+        background-color: #d3d3d3;
+        width: 32vw;
+        border-radius: 25px;
+        height: 7vh;
+        margin-top: 5.8vh;
+        overflow: hidden;
+    }
+    #settingsOptions >  .card > .selector > .roller {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50.7vw;
+        position: relative;
+        left: -18.5vw;
+        transition: 300ms;
+    }
+    #settingsOptions >  .card > .selector > .roller > .on {
+        width: 20vw;
+        padding-left: 5px;
+        font-size: 2.7vh;
+        font-family: "SPro";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+        transform:  matrix( 1.00182879956742,0,0,1,0,0);
+        -moz-transform: matrix( 1.00182879956742,0,0,1,0,0);
+        -webkit-transform: matrix( 1.00182879956742,0,0,1,0,0);
+        -ms-transform: matrix( 1.00182879956742,0,0,1,0,0);
+}
+    #settingsOptions >  .card > .selector > .roller > .button{
+        width: 10.7vw;
+        height:  10.7vw;
+        background: white;
+        border-radius: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #settingsOptions >  .card > .selector >  .selected{
+        left: 0;
+    }
+
+    #settingsOptions >  .card > .dropdown{
+        margin-top: 5.7vh;
+        height: 5.7vh;
+        border: 1px solid white;
+        width: 53.3vw;
+        margin-bottom: 2vh;
+        line-height: 100%;
+        font-size: 2.4vh;
+        font-family: "SPro";
+        color: rgb(255, 255, 255);
+        line-height: 5.7vh;
+        text-align: left;
+        -moz-transform: matrix( 1.00321687572497,0,0,0.9995598805902,0,0);
+        -webkit-transform: matrix( 1.00321687572497,0,0,0.9995598805902,0,0);
+        -ms-transform: matrix( 1.00321687572497,0,0,0.9995598805902,0,0);
+    }
+    #settingsOptions >  .card > .accountSelector{
+        margin-top: 0;
+        margin-bottom: 5.5vh;
+    }#settingsOptions >  .card > .hid{
+             opacity: 0;
+    }
+    #settingsOptions >  .card > .dropdown > i {
+        margin-left: 3vw;
+        margin-right: 2vw;
+    }
+    #settingsOptions >  .card > .Name {
+        margin-top: 3vh;
+        font-size: 2.7vh;
+        font-family: "SPro";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+        transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+        -moz-transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+        -webkit-transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+        -ms-transform: matrix( 1.00184828397368,0,0,1.000670066467,0,0);
+    }
+
+    #closeSettings{
+        display: block;
+        position: absolute;
+        left: 8vw;
+        top: 5.8vh;
+        width: 4.5vw;
+        height: 4.6vh;
+        background-position: center;
+        background-size: contain;
+        background-image: url("../img/beck-arrow@3x.png");
+        background-repeat: no-repeat;
+    }
+    #closeAccounts{
+        display: block;
+        position: absolute;
+        left: 8vw;
+        top: 5.8vh;
+        width: 4.5vw;
+        height: 4.6vh;
+        background-position: center;
+        background-size: contain;
+        background-image: url("../img/beck-arrow@3x.png");
+        background-repeat: no-repeat;
+    }
+
+}

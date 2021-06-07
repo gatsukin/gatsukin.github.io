@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/assets/css/custom.css" />
+		<link rel="stylesheet" href="/assets/css/home.css" />
+		<link rel="stylesheet" href="/assets/css/phones.css" />
+		<link rel="stylesheet" href="/assets/css/subscription.css" />
+		<link rel="stylesheet" href="/assets/css/userSettings.css" />
+		<link rel="stylesheet" href="/assets/css/plugins/icheck/blue.css" />
+		<link rel="stylesheet" href="/assets/css/phones/view.css" />
+		<link rel="stylesheet" href="/assets/css/admin/lookups/costs.css" />
+		<link rel="stylesheet" href="/assets/css/demopage/footer.css" />
+		<link rel="stylesheet" href="/assets/css/demopage/header.css" />
+		<link rel="stylesheet" href="/assets/css/demopage/main.css" />
+		<link rel="stylesheet" href="/assets/css/demopage/results.css" />
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/assets/css/AdminLTE.min.css" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<div class="body-inner">
+			<div class="sidebar" id="sidebar">
+				<div class="sidebar-menu">
+					<div class="sidebar-menu__head">
+						<a href="/" class="sidebar-menu__head--logo">
+							<img src="/assets/img/logo.svg" alt="" />
+						</a>
+						<button class="sidebar__toggle" id="sidebarToggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+
+					<nav class="sidebar-menu__nav">
+						<ul class="navigation" data-widget="tree">
+							<li>
+								<a href="#">
+									<img
+										class="sidebar-menu__nav--icon"
+										src="/assets/img/icons/menuHome.svg"
+									/><span>My Dashboard</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<img
+										class="sidebar-menu__nav--icon"
+										src="/assets/img/icons/menuPhoneNumbers.svg"
+									/><span>Phone Numbers</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										class="sidebar-menu__nav--icon"
+										src="/assets/img/icons/menuPhone.svg"
+									/><span>Import Phone Numbers</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										class="sidebar-menu__nav--icon"
+										src="/assets/img/icons/menuView.svg"
+									/><span>Lookup</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="#">
+									<img
+										class="sidebar-menu__nav--icon"
+										src="/assets/img/icons/menuAccount.svg"
+									/><span>Account Settings</span>
+								</a>
+
+								<ul class="treeview-menu" style="display: none">
+									<li class="">
+										<a href="#">
+											<span>Subscription</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>Notifications</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>Job Status</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>IVR</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#">
+									<img
+										class="sidebar-menu__nav--icon"
+										src="/assets/img/icons/menuAccountManager.svg"
+									/><span>Account Management</span>
+								</a>
+
+								<ul class="treeview-menu" style="display: none">
+									<li class="">
+										<a href="#">
+											<span>Subscription</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>Notifications</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>Job Status</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>IVR</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#">
+									<img
+										class="sidebar-menu__nav--icon"
+										src="/assets/img/icons/menuServiceProvider.svg"
+									/><span>Carrier Service Provider</span>
+								</a>
+
+								<ul class="treeview-menu" style="display: none">
+									<li class="">
+										<a href="#">
+											<span>Subscription</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>Notifications</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>Job Status</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>IVR</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#">
+									<img
+										class="sidebar-menu__nav--icon"
+										src="/assets/img/icons/menuCallManager.svg"
+									/><span>Call Manager</span>
+								</a>
+
+								<ul class="treeview-menu" style="display: none">
+									<li class="">
+										<a href="#">
+											<span>Subscription</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>Notifications</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>Job Status</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											<span>IVR</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="sidebar__history widget">
+					<div class="widget__title">
+						<span>My account</span>
+						<div
+							class="widget--tooltip"
+							data-toggle="tooltip"
+							data-placement="top"
+							title="My status information!"
+						>
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+					</div>
+					<div class="widget__body">
+						<div>
+							<div
+								class="user-mini"
+								data-toggle="tooltip"
+								data-placement="right"
+								title="UserName LongShort. Support ID: 150505"
+							>
+								<img src="/assets/img/icons/account.svg" alt="" />
+							</div>
+							<div class="username">UserName LongShort</div>
+							<div class="userid">Support ID: <span>150505</span></div>
+						</div>
+					</div>
+					<div class="widget__footer">
+						<a href="#" class="widget--link">
+							<img
+								class="sidebar-menu__nav--icon"
+								src="/assets/img/icons/settings.svg"
+							/>
+							<span>Settings</span>
+						</a>
+
+						<a href="#" class="widget--link">
+							<img
+								class="sidebar-menu__nav--icon"
+								src="/assets/img/icons/zoomout.svg"
+							/>
+							<span>Zoom out</span>
+						</a>
+						<a href="#" class="widget--link">
+							<img
+								class="sidebar-menu__nav--icon"
+								src="/assets/img/icons/signOut.svg"
+							/>
+							<span>Sign Out</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="phone-wrapper">
+				<div class="phone-stats">
+					<a href="#" class="stats ic-phone">
+						<div class="stats__name">Phone Numbers</div>
+						<div class="stats__num">4582</div>
+					</a>
+					<a href="#" class="stats ic-clean">
+						<div class="stats__name">Clean Numbers</div>
+						<div class="stats__num">358</div>
+					</a>
+					<a href="#" class="stats ic-flag">
+						<div class="stats__name">Flagged Numbers</div>
+						<div class="stats__num">1246</div>
+					</a>
+					<a href="#" class="stats ic-star">
+						<div class="stats__name">Active (All)</div>
+						<div class="stats__num">55</div>
+					</a>
+					<a href="#" class="stats ic-flag">
+						<div class="stats__name">Flagged <span> Last 24 hrs</span></div>
+						<div class="stats__num">08</div>
+					</a>
+					<a href="#" s class="stats ic-flag">
+						<div class="stats__name">Flagged <span>Last 7 days</span></div>
+						<div class="stats__num">4586</div>
+					</a>
+				</div>
+
+				<div class="phone-table">
+					<div class="fixed-table">
+						<table cellspacing="0">
+							<thead class="phone-table__head">
+								<tr>
+									<th>Phone Numbers</th>
+									<th data-toggle="tooltip" data-placement="top" title="FTC">
+										F
+									</th>
+									<th
+										data-toggle="tooltip"
+										data-placement="top"
+										title="Nomorobo"
+									>
+										N
+									</th>
+									<th
+										data-toggle="tooltip"
+										data-placement="top"
+										title="Icehook System"
+									>
+										I
+									</th>
+									<th data-toggle="tooltip" data-placement="top" title="Telo">
+										T
+									</th>
+									<th
+										data-toggle="tooltip"
+										data-placement="top"
+										title="Truespam"
+									>
+										T
+									</th>
+									<th
+										data-toggle="tooltip"
+										data-placement="top"
+										title="Robokiller"
+									>
+										R
+									</th>
+									<th
+										data-toggle="tooltip"
+										data-placement="top"
+										title="Carrier ATT"
+									>
+										AT
+									</th>
+									<th
+										data-toggle="tooltip"
+										data-placement="top"
+										title="Carrier VERIZON"
+									>
+										VE
+									</th>
+									<th
+										data-toggle="tooltip"
+										data-placement="top"
+										title="Carrier SPRINT"
+									>
+										SP
+									</th>
+									<th
+										data-toggle="tooltip"
+										data-placement="top"
+										title="Carrier TMOBILE"
+									>
+										TM
+									</th>
+									<th data-toggle="tooltip" data-placement="top" title="FTC">
+										ST
+									</th>
+									<th>Date Created</th>
+									<th>First Date Flagged</th>
+									<th>Last Flagged</th>
+									<th>Details</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********222
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- I -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- VE -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********222
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- I -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- VE -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<!-- Phone Numbers -->
+									<td>
+										********143
+										<span
+											class="num-tooltip"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="123-4567-890"
+											>?</span
+										>
+									</td>
+									<!-- F -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- N -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- I -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- T -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- R -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- AT -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- VE -->
+									<td>
+										<!-- <img src="/assets/img/icons/flagChecked.png" alt=""> -->
+									</td>
+									<!-- SP -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- TM -->
+									<td>
+										<img src="/assets/img/icons/flagChecked.png" alt="" />
+									</td>
+									<!-- ST -->
+									<td>CA</td>
+									<!-- Date Created -->
+									<td>02-16-2021</td>
+									<!-- First Date Flagged -->
+									<td>02-18-2021</td>
+									<!-- Last Flagged -->
+									<td>02-22-2021</td>
+									<!-- Details -->
+									<td>
+										<a class="phone-view-link" href="#">
+											<img src="/assets/img/icons/view.png" alt="" />
+										</a>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="flag-sidebar">
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">F</div>
+							<div class="num">45</div>
+						</div>
+						<div class="widget__footer">
+							<span>FTC</span>
+
+							<div class="toggle">
+								<input id="flagF45" type="checkbox" hidden />
+								<label class="toggle-item" for="flagF45"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">I</div>
+							<div class="num">12</div>
+						</div>
+						<div class="widget__footer">
+							<span>Nomorobo</span>
+
+							<div class="toggle">
+								<input id="flagI12" type="checkbox" hidden />
+								<label class="toggle-item" for="flagI12"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">N</div>
+							<div class="num">15</div>
+						</div>
+						<div class="widget__footer">
+							<span>Icehook System</span>
+
+							<div class="toggle">
+								<input id="flagN15" type="checkbox" hidden />
+								<label class="toggle-item" for="flagN15"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">T</div>
+							<div class="num">1</div>
+						</div>
+						<div class="widget__footer">
+							<span>Telo</span>
+
+							<div class="toggle">
+								<input id="flagT1" type="checkbox" hidden />
+								<label class="toggle-item" for="flagT1"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag disabled">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">T</div>
+							<div class="num">8</div>
+						</div>
+						<div class="widget__footer">
+							<span>Truespam</span>
+
+							<div class="toggle">
+								<input id="flagT8" type="checkbox" hidden />
+								<label class="toggle-item" for="flagT8"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">R</div>
+							<div class="num">109</div>
+						</div>
+						<div class="widget__footer">
+							<span>Robokiller</span>
+
+							<div class="toggle">
+								<input id="flagR109" type="checkbox" hidden />
+								<label class="toggle-item" for="flagR109"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">AT</div>
+							<div class="num">0</div>
+						</div>
+						<div class="widget__footer">
+							<span>Carrier ATT</span>
+
+							<div class="toggle">
+								<input id="flagAT0" type="checkbox" hidden />
+								<label class="toggle-item" for="flagAT0"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">SP</div>
+							<div class="num">29</div>
+						</div>
+						<div class="widget__footer">
+							<span>Carrier Sprint</span>
+
+							<div class="toggle">
+								<input id="flagSP29" type="checkbox" hidden />
+								<label class="toggle-item" for="flagSP29"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">T</div>
+							<div class="num">28</div>
+						</div>
+						<div class="widget__footer">
+							<span>Truespam</span>
+
+							<div class="toggle">
+								<input id="flagT28" type="checkbox" hidden />
+								<label class="toggle-item" for="flagT28"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget flag ">
+						<div class="widget__title">
+							<span>Total Flagged</span>
+							<div
+								class="widget--tooltip"
+								data-toggle="tooltip"
+								data-placement="auto"
+								title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+							>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="widget__body">
+							<div class="teg">T</div>
+							<div class="num">18</div>
+						</div>
+						<div class="widget__footer">
+							<span>Truespam</span>
+
+							<div class="toggle">
+								<input id="flagT18" type="checkbox" hidden />
+								<label class="toggle-item" for="flagT18"></label>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/adminlte.min.js"></script>
+		<script>
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip({
+					boundary: "scrollParent",
+					container: "body",
+				});
+			});
+
+			$("#sidebarToggle").click(function () {
+				$("#sidebar").toggleClass("toggled");
+			});
+		</script>
+	</body>
+</html>

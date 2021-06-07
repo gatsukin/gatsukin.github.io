@@ -1,0 +1,475 @@
+.padding10{
+	padding:10px;
+}
+.padding20{
+	padding:20px;
+}
+
+.form-inline-block {
+	display:inline-block;
+	margin: 0 10px;
+}
+
+.selected-rows-fixed {
+	position:fixed;
+	bottom:0;
+	padding:20px;
+	width:100%;
+	margin-left: -25px;
+	z-index: 99;
+}
+
+#basePrice .old-price{
+	font-size:14px;
+    text-decoration: line-through;
+
+}
+#basePrice .new-price{
+	font-size:17px;
+	color:green;
+	font-weight: bold;
+	margin-left:10px;
+}
+
+select > option:disabled{
+	color:white;
+	background: #dd4b39;
+}
+
+select.has-error, input.has-error {
+	border:1px solid red;
+}
+
+.phone-number.phone-number-archived{
+	color:#aaa;
+}
+
+.dataTables_page_sizing{
+    text-align: left;
+    padding-top: 0.25em;
+}
+.table-row-actions .form-inline-block{
+	margin:0;
+}
+
+
+#authorizeForm{
+    position: absolute;
+    left: 35vw;
+    top: 25vh;
+    width: 30vw;
+    height: auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all ease 500ms;
+}
+
+#updateForm{
+    position: absolute;
+    left: 35vw;
+    top: 25vh;
+    width: 30vw;
+    height: auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all ease 500ms;
+}
+
+#rechargeForm{
+    position: absolute;
+    /* left: 35vw; */ /* changes from adding address and company */
+		left: 0; /* changes from adding address and company */
+		right: 0; /* changes from adding address and company */
+    top: 25vh;
+    width: 30vw;
+    height: auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all ease 500ms;
+}
+
+#terms{
+    font-size: 16px;
+    position: absolute;
+    left: 15vw;
+    top: 10vh;
+    width: 70vw;
+    height: auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all ease 500ms;
+}
+
+#terms > .box-body > .closer{
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cncl{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+.agree_wrapper{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.agree_wrapper  > label {
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+.agree_wrapper  > input {
+    width: 15px;
+    height: 15px;
+}
+#terms b{
+    margin-right: 10px;
+}
+#alert{ font-size: 16px;
+    position: absolute;
+    left: 32vw;
+    top: 20vh;
+    width: 15vw;
+    height: auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all ease 500ms;
+}
+
+#modal-bulk-assign-to .dv-assign-btn,
+#modal-bulk-assign-to .dv-call-groups{
+    margin-top:20px;
+}
+
+#modal-bulk-assign-to .dv-call-groups select{
+    width:100%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* Low Balance CSS */
+i.danger-balance {
+    color: red;
+}
+span.danger-balance {
+    color: red;
+    font-size: 14px;
+}
+
+/* Call Manager custom Css */
+.wrap-text{
+    max-width: 360px !important;
+    overflow-wrap: break-word !important;
+}
+
+.wrap-text-token{
+    overflow-wrap: break-word !important;
+    max-width: 1000px !important;
+}
+
+hr.vertical-hr {
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         100px;
+    width:          1px;
+}
+
+.control-btn {
+    cursor: pointer;
+}
+
+.main-header .logo .logo-lg img{
+    width: 101px !important;
+    height: 58px !important;
+}
+
+.login-box, .register-box{
+    width: 404px !important;
+}
+
+.login-box-body{
+    border-radius: 13px;
+}
+
+.register-box-body{
+    border-radius: 13px;
+}
+
+.login-cust-hd{
+    margin-bottom:20px;
+}
+
+.ATT{
+    background-color: #009fdb !important;
+}
+.VERIZON{
+    background-color: #000 !important;
+}
+.SPRINT{
+    background-color: rgb(255, 206, 10) !important;
+}
+.TMOBILE{
+    background-color: #e20074 !important;
+}
+
+.os-device-apple {
+    width: 40%;
+    height: 25px;
+    background: url("../img/DemoTools/logos/ios2.png") no-repeat center;
+    background-size: contain;
+}
+.os-device-android {
+    width: 60%;
+    height:25px;
+    background: url("../img/DemoTools/logos/android.png") no-repeat center;
+    background-size: contain;
+}
+.contain-carrier-screens { height: 20px; width: 50%; }
+.att-right { background: url("../img/DemoTools/logos/att.png") center / contain no-repeat; }
+.tmobile-right { background: url("../img/DemoTools/logos/tmobile2.png") center / contain no-repeat; }
+.verizon-right { background: url("../img/DemoTools/logos/verizon.png") center / contain no-repeat; }
+.sprint-right { background: url("../img/DemoTools/logos/sprint.png") center / contain no-repeat; }
+
+.info_status_add_phone {
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-weight: 600;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tabs li:not(:last-child) {
+    margin-right: 3px;
+}
+
+.tabs li a {
+    display: block;
+    position: relative;
+    top: 4px;
+    padding: 10px 35px;
+    border-radius: 2px 2px 0 0;
+    background: white;
+    opacity: 0.7;
+    transition: all 0.1s ease-in-out;
+}
+
+.tabs li.active-tab a {
+    border-top: 1px solid;
+    opacity: 1;
+}
+
+/*.tabs li.active-tab a,*/
+/*.tabs li a:hover {*/
+/*    opacity: 1;*/
+/*    top: 0;*/
+/*}*/
+
+.tabs-content {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    margin-bottom: 10px;
+    border-radius: 0 4px 4px 4px;
+    background: white;
+}
+
+.tabs-panel {
+    display: none;
+}
+
+.tabs-panel.active-tab {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+
+    i.fw {
+        top: 50px;
+    }
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tabs li {
+        width: 100%;
+    }
+
+    .tabs li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .tabs li a {
+        border-radius: 0;
+        opacity: 1;
+        top: 0;
+        background: #f9fafc;
+    }
+
+    .tabs li.active-tab a {
+        background: white;
+    }
+
+    .tabs li.active a::before {
+        /*content: '•';*/
+        /*padding-right: 5px;*/
+    }
+
+    .tabs-content {
+        border-radius: 0;
+    }
+}
+
+/* Tabs screenshots */
+i.fw {
+    position: absolute;
+    font-size: 1.6em;
+    font-family: fontawesome !important;
+    font-style: normal;
+    color: #696969;
+    z-index: 3;
+    cursor: pointer;
+}
+i[data-direct=next] {
+    margin-left: 147px;
+}
+i[data-direct=back] {
+    margin-left: 10px;
+}
+i:hover {
+    font-size: 1.5em;
+}
+i:active {
+    color: #333;
+}
+
+@media screen and (max-width: 576px) {
+    i.fw {
+        top: 46px;
+    }
+    i:hover {
+        font-size: 1.5em;
+        top: 47px;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    i.fw {
+        position: absolute;
+        top: 10px;
+    }
+    i:hover {
+        top: 11px;
+    }
+}
+
+.caption-screen {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    width: 76%;
+    margin-left: 12%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+ .loader-container .loader {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto; }
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0; }*/
+
+/*body {*/
+/*    background-color: #4169E1; }*/
+
+#loaders {
+    margin: 0 auto;
+    width: 1000px; }
+
+.loader-container {
+    display: none;
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg); } }
+.arc-rotate-double .loader {
+    color: #000;
+    width: 100px;
+    height: 100px; }
+.arc-rotate-double .loader > div {
+    position: absolute;
+    border: 2px solid;
+    border-color: transparent #5d5d5d;
+    border-radius: 50%;
+    animation: load 1s infinite ease-in-out; }
+.arc-rotate-double .loader .arc-1 {
+    margin: 32% 0 0 32%;
+    width: 36%;
+    height: 36%; }
+.arc-rotate-double .loader .arc-2 {
+    margin: 40% 0 0 40%;
+    width: 20%;
+    height: 20%;
+    animation-direction: reverse;
+    animation-delay: -0.5s; }
+@keyframes load {
+    0% {
+        transform: rotate(0) scale(1); }
+    50% {
+        transform: rotate(180deg) scale(0.6); }
+    100% {
+        transform: rotate(360deg) scale(1); } }
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg); } }
+.arc-rotate .loader {
+    width: 100px;
+    height: 100px; }
+.arc-rotate .loader .arc {
+    position: absolute;
+    border: 2px solid;
+    border-color: transparent #FFF #FFF #FFF;
+    border-radius: 50%;
+    margin: 32% 0 0 32%;
+    width: 36%;
+    height: 36%;
+    animation: single-arc-rotate 1s infinite linear; }
+@keyframes single-arc-rotate {
+    100% {
+        transform: rotate(360deg); } }
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg); } }

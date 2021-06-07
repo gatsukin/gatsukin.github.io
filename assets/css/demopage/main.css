@@ -1,0 +1,704 @@
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: RobotoL; /* Имя шрифта */
+    src: url(../../fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: RobotoT; /* Имя шрифта */
+    src: url(../../fonts/Roboto-Thin.ttf); /* Путь к файлу со шрифтом */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #11354F;
+    overflow-x: hidden;
+}
+
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.HowLooksArt {
+    width: 100vw;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: url("../../img/DemoTools/firstArticleBack.png") no-repeat center;
+    background-size: cover;
+}
+
+.HowLooksArt > .title {
+
+    margin-left: 29.6vw;
+    margin-top: 26px;
+    font-family: Roboto;
+
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.HowLooksArt > .titleBold {
+
+    margin-left: 29.6vw;
+    font-family: Roboto;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.HowLooksArt > .text {
+    width: 319px;
+    margin-left: 29.6vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #414141;
+}
+
+.advances {
+    display: flex;
+    height: 215px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.advanBlock {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 7.6vw;
+}
+
+.advanBlock > .advanText {
+    margin-top: 18px;
+    width: 163px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #C6E7FF;
+}
+
+.advanBlock:first-child {
+    margin-top: 49px;
+    margin-left: 30vw;
+}
+
+.advanBlock:nth-child(2) {
+    margin-top: 32px;
+}
+
+.advanBlock:first-child > .advanImg {
+    width: 58px;
+    height: 58px;
+    background: url("../../img/DemoTools/calender.png") no-repeat center;
+    background-size: contain;
+}
+
+.advanBlock:last-child > .advanImg {
+    width: 60px;
+    height: 60px;
+    background: url("../../img/DemoTools/advPhone.png") no-repeat center;
+    background-size: contain;
+}
+
+.advanBlock > .advanImg {
+    width: 75px;
+    height: 75px;
+    background: url("../../img/DemoTools/wifi.png") no-repeat center;
+    background-size: contain;
+
+}
+
+.advanBlock:last-child {
+    margin-right: 0;
+}
+
+.howToUse {
+    height: 390px;
+    width: 100vw;
+    background: url("../../img/DemoTools/howToUseBig.png") no-repeat top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howToUse > .title {
+    width: 672px;
+    margin-top: 121px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.howToUse > .step {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.step > .left {
+    width: 3.6vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    margin-right: 3vw;
+
+}
+
+.step > .right {
+    width: 26.3vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C6E7FF;
+}
+
+.howItLooks {
+    background: url("../../img/DemoTools/howitlooksBig.png") no-repeat top;
+    background-size: cover;
+    width: 100vw;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.howItLooks > .left {
+    margin-top: 37px;
+    margin-left: 32.9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howItLooks > .left > .title {
+    width: 24vw;
+    font-family: RobotoT;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.howItLooks > .left > .titleBold {
+    width: 24vw;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.howItLooks > .right {
+    height: 310px;
+    width: 184px;
+    margin-top: 50px;
+    background: url("../../img/DemoTools/howLooksExample.png") no-repeat top;
+    background-size: cover;
+    margin-left: 5.4vw;
+}
+
+.howItLooks > .left > .items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 24vw;
+    margin-top: 31px;
+}
+
+.howItLooks > .left > .items > .item {
+    box-sizing: content-box;
+    padding-left: 13px;
+    padding-right: 13px;
+    min-width: 75px;
+    height: 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    text-align: center;
+    line-height: 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+
+    color: #686868;
+    margin-bottom: 16px;
+}
+
+.howItLooks > .left > .items > .item:nth-child(2) {
+    opacity: 0.67;
+}
+
+.howItLooks > .left > .items > .item:nth-child(3) {
+    opacity: 0.45;
+}
+
+.howItLooks > .left > .items > .item:nth-child(3) {
+    opacity: 0.45;
+}
+
+.howItLooks > .left > .items > .item:nth-child(4) {
+    opacity: 0.23;
+}
+
+.howItLooks > .left > .items > .item:nth-child(5) {
+    opacity: 0.11;
+}
+
+.topInputs {
+    width: 44vw;
+    display: flex;
+    margin-left: 29vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    margin-top: 35px;
+}
+
+.topInputs > .inputText {
+    width: 32.4vw;
+    height: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    outline: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    padding-left: 2vw;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #8E8E8E;
+}
+
+.phoneSub {
+    width: 88px;
+    height: 44px;
+    border: none;
+    margin-left: auto;
+    margin-right: 0;
+    background: #F7C000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.topItems {
+    width: 44vw;
+    display: flex;
+    margin-left: 29vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.topItems > .left > .text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+    opacity: 0.87;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.topItems > .left > .all {
+    cursor: pointer;
+    margin-left: 25px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+
+    opacity: 0.45;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.topItems > .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.providers{
+    margin-top: 15px;
+    margin-left: 29vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.providers > .prov{
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    border: 5px solid transparent;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.verizon{
+    background: url("../../img/DemoTools/verizon.png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.att{
+    background: url("../../img/DemoTools/att.png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+}
+.sprint{
+    background: url("../../img/DemoTools/sprint.png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+}
+.tmobile{
+    background: url("../../img/DemoTools/tmobile.png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+}
+.prvSelected{
+
+    border: 5px solid #FFC700 !important;
+    border-radius: 13px;;
+}
+.selectDeviceTitle{
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-left: 29vw;
+    opacity: 0.87;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+.devicesFolders{
+    width: 44vw;
+    margin-top: 15px;
+    margin-left: 29vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.devicesFolders > .folder{
+    width: 327px;
+}
+.folder > .topItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 327px;
+    margin-left: 0;
+    margin-top: 0;
+}
+.folder > .topItems .name{
+    margin-left: 19px;font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity: 0.99;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    margin-bottom: 11px;
+}
+.folder > .topItems .allSelect{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity: 0.45;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+.folder > .device{
+    cursor: pointer;
+    transition: all 300ms ease;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    background: #5489FF;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    margin-bottom: 21px;
+}
+
+.folder >.device > .text{
+    margin-left: 20px;
+}
+.folder >.device > .checked{
+    display: none;
+    margin-left: auto;
+    margin-right: 8px;
+    height: 18px;
+    width: 18px;
+    background: url("../../img/DemoTools/checked.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.folder > .chechedDev{
+
+    background: #2864EB;
+}
+@media screen and (max-width: 768px){
+    .advances{
+    }
+    .HowLooksArt > .title{
+        margin-left: 40px;
+        margin-top: 36px;
+    }
+    .HowLooksArt > .titleBold{
+        margin-left: 40px;
+    }
+    .HowLooksArt > .text{
+        margin-left: 40px;
+    }
+    .HowLooksArt{
+        height: 208px;
+        background: url("../../img/DemoTools/firstArtTablet.png") no-repeat center;
+        background-size: cover;
+    }
+    .topInputs{
+        width: 702px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topInputs > .inputText{
+        width: 589px;
+        height: 44px;
+    }
+    .phoneSub{
+        width: 88px;
+    }
+    .providers {
+        margin-left: 40px;
+    }
+    .topItems {
+        margin-left: 40px;
+    }
+    .selectDeviceTitle {
+        margin-left: 40px;
+    }
+    .devicesFolders{
+        margin-left: 40px;
+        width: 702px;
+    }
+    .howToUse > .title {
+        width: 540px;
+    }
+    .howToUse > .step {
+        width: 540px;
+        margin-bottom: 18px;
+    }
+    .step > .left{
+        width: 69px;
+    }
+    .step > .right{
+        width: 471px;}
+    .advanBlock:first-child{
+        margin-left: 112px;
+    }
+    .advanBlock{
+        margin-right: 40px;
+    }
+    .howItLooks > .left{
+        margin-left: 0;
+        align-items: flex-start;
+    }
+    .howItLooks > .left > .title{
+        width: 484px;
+    }
+    .howItLooks > .left > .titleBold{
+        width: 484px;
+    }
+    .howItLooks > .left > .items{
+        margin-left: 123px;
+    }
+    .socials{
+        margin-bottom: 13px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .HowLooksArt {
+        height: 242px;
+        background: url("../../img/DemoTools/firstArtMob.png") no-repeat center;
+        background-size: cover;
+    }
+    .HowLooksArt > .title{
+        margin-left: 23px;
+        margin-top: 36px;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .HowLooksArt > .titleBold{
+        margin-left: 33px;
+    }
+    .HowLooksArt > .text{
+        margin-left: 33px;
+        width: 268px;
+    }
+    .topInputs{
+        width: 273px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 27px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .topInputs > .inputText{
+        width: 273px;
+
+    }
+    .phoneSub{
+        margin-top: 18px;
+        margin-left: 0;
+        width: 88px;
+    }
+    .topItems > .left{
+        width: 100%;
+    }
+    .topItems{
+        width: 100%;
+        margin-left: 36px;
+    }
+    .providers{
+        margin-left: 23px;
+    }
+    .devicesFolders{
+        margin-left: 23px;
+        flex-direction: column;
+    }
+    .howToUse{
+        height: 508px;
+        background: url("../../img/DemoTools/howToUseMob.png") no-repeat top;
+        background-size: cover;
+    }
+    .howToUse > .title{
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        width: 90%;
+    }
+    .howToUse > .step{
+        width: 90%;
+    }
+    .step > .left{
+        width: 20%;
+    }
+    .step > .right{
+        width: 80%;
+    }
+    .advances{
+        height: 524px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .advanBlock:first-child{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .advanBlock:nth-child(2){
+        margin-right: 0;
+    }
+    .howItLooks > .left > .title{
+        width: 284px;
+        margin-left: 41px;
+    }
+    .howItLooks > .left > .titleBold{
+        width: 284px;
+        margin-left: 41px;
+    }
+    .howItLooks{
+        height: auto;
+        flex-direction: column;
+    }
+    .howItLooks > .left > .items{
+        margin-left: 28px;
+        width: auto;
+    }
+    .howItLooks > .right{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

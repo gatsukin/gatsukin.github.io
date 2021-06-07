@@ -1,0 +1,153 @@
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topHeader {
+    background: #2D516A;
+    width: 100vw;
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #D0D0D0;
+    font-size: 12px;
+    font-family: Roboto;
+}
+
+.bottomHeader {
+    height: 143px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #DFDFDF;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 29vw;
+    cursor: pointer;
+}
+
+.mail {
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mail > .mailImg {
+    margin-right: 0;
+    margin-right: 10px;
+    width: 16px;
+    height: 13px;
+    background: url("../../img/DemoTools/mail.png") no-repeat center;
+    background-size: cover;
+}
+
+.phone > .phoneImg {
+    margin-right: 0;
+    margin-right: 10px;
+    width: 7px;
+    height: 12px;
+    background: url("../../img/DemoTools/phone.png") no-repeat center;
+    background-size: cover;
+}
+
+.bottomHeader > .logo {
+    margin-top: 57px;
+    background: url("../../img/DemoTools/logo.png") no-repeat center;
+    background-size: contain;
+    height: 47.5px;
+    width: 140px;
+    margin-left: 29.6vw;
+}
+
+nav {
+    margin-top: 107px;
+    margin-left: 85px;
+}
+
+nav > .item {
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    color: #DFDFDF;
+    line-height: 16px;
+    margin-right: 35px;
+    font-family: Roboto;
+}
+
+
+.logButt {
+    margin-top: 77px;
+    display: block;
+    width: 136px;
+    height: 32px;
+    border-radius: 13px;
+    background: #0075FF;
+    color: white;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+    border: 3px solid #0062D4;
+}
+@media screen and (max-width: 768px){
+    .mail{
+        margin-left: 34px;
+    }
+    .phone{
+        margin-right: 41px;
+    }
+    .bottomHeader{
+        height: 91px;
+    }
+    .bottomHeader > .logo{
+        margin-left: 34px;
+        margin-top: 27px;
+        width: 136px;
+        height: 46px;
+    }
+    nav{
+        margin-top: 64px;
+        margin-left: 50px;
+    }
+    .logButt{
+        margin-top: 28px;
+        margin-right: 33px;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .topHeader{
+        display: none;
+    }
+    .bottomHeader{
+        height: 102px;
+    }
+
+    .bottomHeader > .logo{
+        margin-left: 30px;
+        margin-top: 30px;
+        width: 140px;
+        height: 46px;
+    }
+    nav{
+        display: none;
+    }
+    .logButt{
+        display: none;
+    }
+}

@@ -1,0 +1,726 @@
+.content-wrapper {
+    background-color: #fff;
+}
+
+/* class for google autocomplete */
+.pac-container{
+  z-index: 1500;
+}
+
+.additional_address_mobile{
+  display: none;
+}
+/* changes from adding address and company */
+
+.BlockCard{
+    /* width: 360px; */ /* changes from adding address and company */
+    /* height: 220px; */ /* changes from adding address and company */
+    height: 100%;
+}
+
+.additional_address{
+  position: absolute;
+  bottom: 121px;
+}
+
+.full_address span{
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+}
+
+.full_address{
+  color: white;
+}
+
+#company_name{
+  font-size: 14px;
+  display: block;
+}
+
+.CreditCart{
+    background-color: #00c0ef;
+    border-radius: 10px;
+    width: 100%;
+    /* height: 100%; */ /* changes from adding address and company */
+    height:241px;
+    padding: 30px 40px;
+
+}
+/* end changes from adding address and company name */
+
+.header_line {
+    font-size: 30px;
+    color: #cccccc;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    overflow-y: visible;
+}
+
+.cards > .card {
+    width: 14.2%;
+    border-radius: 5px;
+    animation-duration: .5s;
+}
+
+.offset {
+    margin: 5px 0;
+    padding: 0 5px;
+}
+
+.card_plan {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+
+.card_plan p {
+    margin: 0;
+}
+
+.card_body {
+    height: 410px;
+    border-radius: 5px;
+    animation-duration: .5s;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+.active .card_body {
+    margin-top: -10px;
+    height: 430px;
+    padding-top: 10px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+.active .card_body .choisebtn {
+    display: block;
+    text-align: center;
+    padding: 37px 0 37px;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.card_body:hover {
+    margin-top: -10px;
+    height: 430px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+.card_body:hover   .choisebtn {
+    display: block;
+    text-align: center;
+    padding: 37px 0 37px;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+.card .number_cnt {
+    background: linear-gradient(to top left, #cccccc, #d6d6d6);
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+.card .number_cnt p {
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.card .number_cnt span {
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.card .tariff_price {
+    background: linear-gradient(to top left, #cccccc, #d6d6d6);
+    text-align: center;
+    color: white;
+    padding: 13px 0;
+}
+
+.card .tariff_price p {
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.card .tariff_price span {
+    font-size: 24px;
+    line-height: 20px;
+    position: relative;
+}
+
+.choisebtn {
+    display: block;
+    text-align: center;
+    padding: 30px 0 37px;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    border: none;
+    background: none;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.cart_top .right{
+    float: right;
+    padding-top: 15px;
+}
+.cart_area{
+    position: relative;
+    height: 100%;
+}
+
+.cart_midle{
+    padding-top: 25px;
+}
+.cart_midle span{
+    color: white;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.cart_bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.cart_bottom .name{
+    display: inline-block;
+}
+.cart_bottom .date{
+    display: inline-block;
+    float: right;
+}.backward{
+     padding: 30px 0;
+
+ }
+.magnet_line{
+    width: 100%;
+    height: 50px;
+    background-color: #313131;
+
+}
+.cvc_area{
+    padding: 20px 20px 30px 20px;
+}
+.cvc_line{
+    width: 100%;
+    line-height: 35px;
+    background-color: #d8d8d8;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-size: 21px;
+    color: white;
+}
+.visa_area{
+    padding:0 40px;
+}
+.right_image{
+    float: right;
+}
+#authorizeForm{
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    position: absolute;
+}
+#updateForm{
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    position: absolute;
+}
+#rechargeForm{
+    /* width: max-content; */ /* changes from adding address and company */
+    width: 55vw; /* changes from adding address and company */
+    height: max-content;
+    margin: auto;
+    top: 25vh;
+    position: absolute;
+}
+
+.input{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 17px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.short{
+    width: 120px;
+    margin-right: 20px;
+}
+
+.content{
+
+    height: auto;
+    overflow-y: auto;
+}
+
+.submit{
+    width: 150px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    border: 0;
+    background-color: #3c8dbc;
+    color: white;
+    border-radius: 6px;
+    font-size: 23px;
+    cursor: pointer;
+}
+#terms{
+    left: 20vw;
+}
+.cont {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #cccccc;
+}
+.cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.contentCustom{
+    width: auto;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.cont:hover input ~ .checkmark {
+    background-color: #eaeaea;
+    border-color: #b9b9b9;
+}
+
+/* When the checkbox is checked, add a blue background */
+.cont input:checked ~ .checkmark {
+    /*  background-color: #2196F3;*/
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.cont input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.cont .checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid #cccccc;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.toflip{
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+
+}
+
+/* здесь находится скорость перевертывания */
+.flipper {
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 360px;
+    width: 100%; /* changes from adding address and company */
+    /* height: 220px; */ /* changes from adding address and company */
+    height: 251px;
+}
+
+/* скройте обратную сторону во время переворота */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%; /* changes from adding address and company */
+    top: 0;
+    left: 0;
+}
+
+/* лицевая сторона размещена над обратной */
+.front {
+    z-index: 2;
+}
+
+/* обратная, изначально скрытая сторона */
+.back {
+    transform: rotateY(180deg);
+}
+
+.credit_settings{
+    font-size: 0;
+    margin-left: 5px;
+}
+.mini_card{
+    background-image: url(../img/mini_card.png);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 78px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+.mini_card_code{
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    color: white;
+    font-size: 16px;
+}
+#rechargeButton{
+    cursor: pointer;
+}
+.updatecard{
+    font-size: 24px;
+    color: white;
+    line-height: 50px;
+    padding: 0 20px;
+    background-color: #3c8dbc;
+    border-radius: 5px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+.updatecard:hover{
+    text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+
+    .additional_address_mobile{
+      display: block;
+    }
+
+    .additional_address{
+      display: none;
+    }
+    #terms {display: none ;
+        left: 0 !important;
+        width: 100% !important;
+    }
+    .hiddenterms{
+        display: block !important;
+    }
+
+    #authorizeForm{
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    #authorizeForm .box-body{
+        padding: 0;
+    }#updateForm{
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 100vh;
+         width: 100%;
+     }
+    #updateForm .box-body{
+        padding: 0;
+    }#rechargeForm{
+         position: absolute;
+         top: 0;
+         left: 0;
+         /* height: 100vh; */ /* changes from adding address and company */
+         height: 178vh;
+         width: 100%;
+     }
+    #rechargeForm .box-body{
+        padding: 0;
+    }
+    #input_area{
+        margin-left: 15px;
+        margin-top: 15px;
+        height: auto;
+    }
+    .cards{
+        margin: auto;
+        width: 100%;
+        height: 440px;
+        display: block;
+        position: relative;
+    }
+
+    .cards > .card{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 450px;
+        opacity: 0;
+        z-index: -2;
+        -webkit-transition: 1000ms;
+        -moz-transition: 1000ms;
+        -ms-transition: 1000ms;
+        -o-transition: 1000ms;
+        transition: 1000ms;
+    }
+    .cards > .card:first-child{
+        opacity: 1;
+        z-index: 1;
+    }
+    .active .card_body {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .card_body {
+        height: 435px !important;
+    }
+    .billings{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 20px;
+    }
+    .billings-body{
+        padding: 0;
+    }
+    .card_body:hover {
+        margin-top: 0;
+        height: 435px;
+        padding-top: 0;
+        -webkit-transition: 500ms;
+        -moz-transition: 500ms;
+        -ms-transition: 500ms;
+        -o-transition: 500ms;
+        transition: 500ms;
+    }
+    .choisebtn{
+        background: rgba(0%, 0%, 0%, 0.2) !important;
+        padding: 37px 0 37px;
+    }
+    .card .number_cnt{
+        background: #d3d3d3;
+        text-align: center;
+        color: white;
+        padding: 25px 0 13px;
+
+    }
+    .card .number_cnt p{
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0;
+    }
+    .card .number_cnt span{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .card .tariff_price{
+        text-align: center;
+        color: white;
+        padding: 13px 0;
+        background: transparent;
+    }
+    .card .tariff_price p{
+        font-size: 18px;
+        line-height: 18px;
+
+    }
+    .card .tariff_price span{
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    .set_price .plusbtn{
+        position: relative;
+        float: right;
+        height: 90px;
+        width: 80px;
+        background-color: #cccccc;
+        cursor: pointer;
+    }
+    .set_price .minusbtn{
+        position: relative;
+        float: left;
+        height: 90px;
+        width: 80px;
+        background-color: #cccccc;
+        cursor: pointer;
+    }
+    .plus, .minus {
+        position: absolute;
+        right: 24px;
+        top: 29px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .plus:before, .plus:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 3px;
+        background-color: white;
+    }
+    .plus:before {
+        transform: rotate(90deg);
+    }
+    .plus:after {
+        transform: rotate(0deg);
+    }
+    .minus:before{
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 3px;
+        background-color: white;
+    }
+    .minus:before {
+        transform: rotate(90deg);
+    }
+    #alert{
+        left: 10%;
+        width: 80%;
+    }
+    .flip-container{
+        padding: 0;
+    }
+    /* changes from adding address and company */
+    .flipper{
+        width: 100%;
+        /* height: 190px; */ /* changes from adding address and company */
+        height: 251px;
+    }
+    .BlockCard {
+        width: 100%;
+        /* height: 190px; */ /* changes from adding address and company */
+        height: 210px;
+    }
+
+    .cart_area{
+        position: initial;
+        height: 100%;
+    }
+
+    .backward{
+      height:100% !important;
+    }
+
+    /* end changes address and company  */
+    #code{
+        font-size: 23px;
+    }
+    #UpdCode{
+        font-size: 23px;
+    }
+    #recode{
+        font-size: 23px;
+        display: block; /* changes from adding address and company */
+    }
+    .cart_bottom{
+        font-size: 18px;
+        position: initial; /* changes from adding address and company */
+    }
+    #input_area{
+        margin-left: 0;
+    }
+    #inputcvc{
+        margin-right: 0 !important;
+    }
+    .CreditCart {
+        margin-left: 4.5%;
+        background-color: #00c0ef;
+        border-radius: 10px;
+        width: 90.5%;
+        /* height: 100%; */ /* changes from adding address and company */
+        height: auto; /* changes from adding address and company */
+        padding: 20px 40px;}
+    .submit {
+        width: 130px;
+    }
+    .input{
+        height: 35px;
+    }
+    .header_line{
+        margin-top: 0;
+    }
+    #reinputcvc{
+        margin-right: 0;
+    }
+    #updinputcvc{
+        margin-right: 0;
+    }
+}
