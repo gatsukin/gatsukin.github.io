@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pils</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#A9BEC9">
+	<meta name="apple-mobile-web-app-title" content="Pils">
+	<meta name="application-name" content="Pils">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- SWIPER -->
+	<link
+	  rel="stylesheet"
+	  href="/assets/css/swiper-bundle.min.css"
+	/>
+	<script src="/assets/js/swiper-bundle.min.js"></script>
+
+
+	<link
+	  rel="stylesheet"
+	  href="/assets/css/nice-select2.css"
+	/>
+	<!-- STYLE -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+	<header>
+	    <div class="menu">
+	        <ul class="menu__main">
+	            <li class="menu__icon">
+	                <a href="#">
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+	                        <path
+	                            d="M25 14.5674C25 20.3664 20.299 25.0674 14.5 25.0674C8.70101 25.0674 4 20.3664 4 14.5674C4 8.76839 8.70101 4.06738 14.5 4.06738C20.299 4.06738 25 8.76839 25 14.5674Z"
+	                            stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	                        <path d="M28 28.0674L22 22.0674" stroke="#131313" stroke-width="2" stroke-linecap="round"
+	                            stroke-linejoin="round" />
+	                    </svg>
+	                </a>
+	            </li>
+	            <li class="menu__icon">
+	                <!-- Для отображения количества товаров прописывать data-count -->
+	                 <!-- Если товаров 0, то вообще убрать data-count -->
+	                <a href="#" data-count="2">
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+	                        <g clip-path="url(#clip0_2001_2288)">
+	                            <path
+	                                d="M11.584 29.0273C12.8266 29.0273 13.834 28.02 13.834 26.7773C13.834 25.5347 12.8266 24.5273 11.584 24.5273C10.3413 24.5273 9.33398 25.5347 9.33398 26.7773C9.33398 28.02 10.3413 29.0273 11.584 29.0273Z"
+	                                stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	                            <path
+	                                d="M25.332 29.0273C26.5747 29.0273 27.582 28.02 27.582 26.7773C27.582 25.5347 26.5747 24.5273 25.332 24.5273C24.0894 24.5273 23.082 25.5347 23.082 26.7773C23.082 28.02 24.0894 29.0273 25.332 29.0273Z"
+	                                stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	                            <path
+	                                d="M7.83297 8.02734L9.93203 18.5148C10.0463 19.0903 10.3594 19.6073 10.8165 19.9752C11.2735 20.3431 11.8454 20.5386 12.432 20.5273H24.582C25.1687 20.5386 25.7406 20.3431 26.1976 19.9752C26.6546 19.6073 26.9677 19.0903 27.082 18.5148L29.082 8.02734H7.83297Z" />
+	                            <path
+	                                d="M1.58203 1.77734H6.58203L7.83297 8.02734M7.83203 8.02734H7.83297M7.83297 8.02734L9.93203 18.5148C10.0463 19.0903 10.3594 19.6073 10.8165 19.9752C11.2735 20.3431 11.8454 20.5386 12.432 20.5273H24.582C25.1687 20.5386 25.7406 20.3431 26.1976 19.9752C26.6547 19.6073 26.9677 19.0903 27.082 18.5148L29.082 8.02734H7.83297Z"
+	                                stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+	                                fill="transparent" />
+	                        </g>
+	                        <defs>
+	                            <clipPath id="clip0_2001_2288">
+	                                <rect width="30" height="30" fill="white" transform="translate(0.332031 0.527344)" />
+	                            </clipPath>
+	                        </defs>
+	                    </svg>
+	                </a>
+	            </li>
+	            <li class="menu__icon">
+	                <a href="#">
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+	                        <g clip-path="url(#clip0_2001_2295)">
+	                            <path
+	                                d="M5.59379 27.3548L4.06493 27.3548L4.06493 25.738L4.0649 9.33427C4.06493 5.60893 7.1314 2.58895 10.9141 2.58893C14.6967 2.58898 17.7632 5.60896 17.7632 9.33423L17.7632 12.8719V13.8642L18.7708 13.8642L22.2501 13.8642C26.0328 13.8643 29.0992 16.8842 29.0993 20.6095C29.0993 24.3349 26.0328 27.3548 22.2501 27.3549L5.59379 27.3548Z"
+	                                stroke="#131313" stroke-width="2" />
+	                        </g>
+	                        <defs>
+	                            <clipPath id="clip0_2001_2295">
+	                                <rect width="30" height="30" transform="translate(0.539062 0.527344)" />
+	                            </clipPath>
+	                        </defs>
+	                    </svg>
+	                </a>
+	            </li>
+	            <li class="menu__icon">
+	                <a href="#">
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+	                        <g clip-path="url(#clip0_2001_2292)">
+	                            <path
+	                                d="M28 29.2041V25.5374C28 23.5925 27.3415 21.7273 26.1694 20.352C24.9973 18.9767 23.4076 18.2041 21.75 18.2041H9.25C7.5924 18.2041 6.00268 18.9767 4.83058 20.352C3.65848 21.7273 3 23.5925 3 25.5374V29.2041" />
+	                            <path
+	                                d="M28 29.2041V25.5374C28 23.5925 27.3415 21.7273 26.1694 20.352C24.9973 18.9767 23.4076 18.2041 21.75 18.2041H9.25C7.5924 18.2041 6.00268 18.9767 4.83058 20.352C3.65848 21.7273 3 23.5925 3 25.5374V29.2041H28Z"
+	                                stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	                            <path
+	                                d="M15.5 15.2041C19.0899 15.2041 22 12.294 22 8.7041C22 5.11425 19.0899 2.2041 15.5 2.2041C11.9101 2.2041 9 5.11425 9 8.7041C9 12.294 11.9101 15.2041 15.5 15.2041Z"
+	                                stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	                        </g>
+	                        <defs>
+	                            <clipPath id="clip0_2001_2292">
+	                                <rect width="30" height="30" transform="translate(0.539062 0.527344)" />
+	                            </clipPath>
+	                        </defs>
+	                    </svg>
+	                </a>
+	            </li>
+
+
+	        </ul>
+
+	        <button class="menu__button " id="MenuToggle">
+	            <div class="menu__button--text">
+	                меню
+	            </div>
+	            <div class="menu__button--icon">
+	            </div>
+	        </button>
+
+	        <div class="menu__logo">
+	            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="122" viewBox="0 0 39 122" fill="none">
+	                <path fill-rule="evenodd" clip-rule="evenodd"
+	                    d="M0 122L-6.00188e-07 108.269C-8.9849e-07 101.445 5.50863 95.9127 12.3039 95.9127C19.0991 95.9127 24.6078 101.445 24.6078 108.269L24.6078 118.864L38.51 118.864L38.51 122L23.0469 122C23.0469 122 23.0465 122 23.0465 120.432L23.0469 122L0 122ZM21.4853 118.864L21.4853 108.269C21.4853 103.177 17.3747 99.0485 12.3039 99.0485C7.23311 99.0485 3.12243 103.177 3.12243 108.269L3.12244 118.864L21.4853 118.864Z"
+	                    fill="#131313" />
+	                <path d="M38.51 79.9223L1.56122 79.9223L1.56122 76.7865L38.51 76.7865L38.51 79.9223Z" fill="#131313" />
+	                <path
+	                    d="M1.56121 59.521L1.56121 56.3851L35.3876 56.3851L35.3876 40.1019L38.51 40.1019L38.51 59.521L1.56121 59.521Z"
+	                    fill="#131313" />
+	                <path
+	                    d="M25.7631 0.0515736C32.803 0.0515733 38.51 5.78303 38.51 12.8531L38.51 28.5803L35.3876 28.5803L35.3876 12.8531C35.3876 7.51488 31.0786 3.18738 25.7631 3.18738C20.4476 3.18738 16.1386 7.51488 16.1386 12.8531L16.1386 16.5977L13.0161 16.5977L13.0161 12.8531C13.0161 5.78303 18.7231 0.0515739 25.7631 0.0515736Z"
+	                    fill="#131313" />
+	                <path
+	                    d="M-4.57362e-06 17.3677C-4.26634e-06 24.3975 5.67448 30.0963 12.6743 30.0963C19.6742 30.0963 25.3486 24.3975 25.3486 17.3677L25.3486 13.5791L22.2262 13.5791L22.2262 17.3677C22.2262 22.6656 17.9497 26.9605 12.6743 26.9605C7.39895 26.9605 3.12243 22.6656 3.12243 17.3677L3.12243 1.61977L-5.26199e-06 1.61977L-4.57362e-06 17.3677Z"
+	                    fill="#131313" />
+	            </svg>
+	        </div>
+	    </div>
+	    <div class="menu__extra" id="ExtraMenu">
+	        <div class="menu__extra--logo">
+	            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="30" viewBox="0 0 23 30" fill="none">
+	                <path
+	                    d="M1.00036 28.0908H13.3851C18.0875 28.0908 21.8995 24.2788 21.8995 19.5763V19.5763C21.8995 14.8739 18.0875 11.0619 13.3851 11.0619H10.2889"
+	                    stroke="#A9BEC9" stroke-width="2" />
+	                <path
+	                    d="M21.8992 1H9.51448C4.81206 1 1 4.81206 1 9.51448V9.51448C1 14.2169 4.81206 18.029 9.51448 18.029H12.6107"
+	                    stroke="#A9BEC9" stroke-width="2" />
+	            </svg>
+	        </div>
+
+	        <ul class="menu__extra--category">
+	            <li>
+	                <a href="#">
+	                    Мужчины
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    Женщины
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    Дети
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    Новости
+	                </a>
+	            </li>
+	        </ul>
+
+	        <div class="separation"></div>
+
+	        <ul class="menu__extra--category mb-10">
+	            <li>
+	                <a href="#">
+	                    Смотреть все
+	                </a>
+	            </li>
+	        </ul>
+
+	        <ul class="menu__extra--category">
+	            <li>
+	                <a href="#">
+	                    Свитшоты
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    Футболки
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    Лонги
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    Шорты
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    Нижнее бельё
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    Носки
+	                </a>
+	            </li>
+	        </ul>
+
+
+	    </div>
+	</header>
+
+	<main class="error-page">
+	    <div class="error-page__logo">
+	        <svg xmlns="http://www.w3.org/2000/svg" width="73" height="23" viewBox="0 0 73 23" fill="none">
+	            <path fill-rule="evenodd" clip-rule="evenodd"
+	                d="M0 0L8.21938 0C12.3045 0 15.6162 3.29001 15.6162 7.34846C15.6162 11.4069 12.3045 14.6969 8.21938 14.6969L1.87714 14.6969L1.87714 23H0L0 13.7647C0 13.7647 0 13.7645 0.93857 13.7645L0 13.7647L0 0ZM1.87714 12.832L8.21938 12.832C11.2678 12.832 13.7391 10.377 13.7391 7.34846C13.7391 4.31995 11.2678 1.86486 8.21938 1.86486L1.87714 1.86486L1.87714 12.832Z"
+	                fill="#131313" />
+	            <path d="M25.1883 23L25.1883 0.932432L27.0654 0.932432L27.0654 23H25.1883Z" fill="#131313" />
+	            <path d="M37.4008 0.932432L39.278 0.932432V21.1351H49.0253L49.0253 23H37.4008L37.4008 0.932432Z"
+	                fill="#131313" />
+	            <path
+	                d="M73 15.3869C73 19.5915 69.5691 23 65.3368 23H55.9223L55.9223 21.1351H65.3368C68.5324 21.1351 71.1229 18.5616 71.1229 15.3869C71.1229 12.2123 68.5324 9.63871 65.3368 9.63871H63.0953V7.77384L65.3368 7.77384C69.5691 7.77384 73 11.1823 73 15.3869Z"
+	                fill="#131313" />
+	            <path
+	                d="M62.6343 0C58.4262 0 55.0148 3.38907 55.0148 7.5697C55.0148 11.7503 58.4262 15.1394 62.6343 15.1394H64.9022V13.2745H62.6343C59.4629 13.2745 56.8919 10.7204 56.8919 7.5697C56.8919 4.419 59.4629 1.86486 62.6343 1.86486L72.0613 1.86486V0L62.6343 0Z"
+	                fill="#131313" />
+	        </svg>
+	    </div>
+	    <div class="error-page__code">
+	        404
+	    </div>
+	    <div class="error-page__text">
+	        Упс... Такой страницы нет
+	    </div>
+	    <div class="error-page__sugest">
+	        но есть много других интересных страниц
+	    </div>
+	    <div class="error-page__arrow">
+	        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+	            <path d="M1 26H26M26 26V1M26 26C23.8182 23.0909 10.0909 9.78788 1 1" stroke="#A9BEC9" />
+	        </svg>
+	    </div>
+	    <div class="error-page__links">
+	        <a href="#" class="btn">
+	            Популярные товары
+	        </a>
+	        <a href="#" class="btn">
+	            новости
+	        </a>
+	        <a href="#" class="btn">
+	            новинки
+	        </a>
+	        <a href="#" class="btn">
+	            категории
+	        </a>
+	    </div>
+	</main>
+
+</body>
+
+</html>

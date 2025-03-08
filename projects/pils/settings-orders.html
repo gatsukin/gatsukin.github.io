@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pils</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#A9BEC9">
+    <meta name="apple-mobile-web-app-title" content="Pils">
+    <meta name="application-name" content="Pils">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="/assets/css/swiper-bundle.min.css"
+    />
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+
+    <link
+      rel="stylesheet"
+      href="/assets/css/nice-select2.css"
+    />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <ul class="menu__main">
+                <li class="menu__icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M25 14.5674C25 20.3664 20.299 25.0674 14.5 25.0674C8.70101 25.0674 4 20.3664 4 14.5674C4 8.76839 8.70101 4.06738 14.5 4.06738C20.299 4.06738 25 8.76839 25 14.5674Z"
+                                stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M28 28.0674L22 22.0674" stroke="#131313" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__icon">
+                    <!-- Для отображения количества товаров прописывать data-count -->
+                     <!-- Если товаров 0, то вообще убрать data-count -->
+                    <a href="#" data-count="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <g clip-path="url(#clip0_2001_2288)">
+                                <path
+                                    d="M11.584 29.0273C12.8266 29.0273 13.834 28.02 13.834 26.7773C13.834 25.5347 12.8266 24.5273 11.584 24.5273C10.3413 24.5273 9.33398 25.5347 9.33398 26.7773C9.33398 28.02 10.3413 29.0273 11.584 29.0273Z"
+                                    stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M25.332 29.0273C26.5747 29.0273 27.582 28.02 27.582 26.7773C27.582 25.5347 26.5747 24.5273 25.332 24.5273C24.0894 24.5273 23.082 25.5347 23.082 26.7773C23.082 28.02 24.0894 29.0273 25.332 29.0273Z"
+                                    stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M7.83297 8.02734L9.93203 18.5148C10.0463 19.0903 10.3594 19.6073 10.8165 19.9752C11.2735 20.3431 11.8454 20.5386 12.432 20.5273H24.582C25.1687 20.5386 25.7406 20.3431 26.1976 19.9752C26.6546 19.6073 26.9677 19.0903 27.082 18.5148L29.082 8.02734H7.83297Z" />
+                                <path
+                                    d="M1.58203 1.77734H6.58203L7.83297 8.02734M7.83203 8.02734H7.83297M7.83297 8.02734L9.93203 18.5148C10.0463 19.0903 10.3594 19.6073 10.8165 19.9752C11.2735 20.3431 11.8454 20.5386 12.432 20.5273H24.582C25.1687 20.5386 25.7406 20.3431 26.1976 19.9752C26.6547 19.6073 26.9677 19.0903 27.082 18.5148L29.082 8.02734H7.83297Z"
+                                    stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    fill="transparent" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2001_2288">
+                                    <rect width="30" height="30" fill="white" transform="translate(0.332031 0.527344)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <g clip-path="url(#clip0_2001_2295)">
+                                <path
+                                    d="M5.59379 27.3548L4.06493 27.3548L4.06493 25.738L4.0649 9.33427C4.06493 5.60893 7.1314 2.58895 10.9141 2.58893C14.6967 2.58898 17.7632 5.60896 17.7632 9.33423L17.7632 12.8719V13.8642L18.7708 13.8642L22.2501 13.8642C26.0328 13.8643 29.0992 16.8842 29.0993 20.6095C29.0993 24.3349 26.0328 27.3548 22.2501 27.3549L5.59379 27.3548Z"
+                                    stroke="#131313" stroke-width="2" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2001_2295">
+                                    <rect width="30" height="30" transform="translate(0.539062 0.527344)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <g clip-path="url(#clip0_2001_2292)">
+                                <path
+                                    d="M28 29.2041V25.5374C28 23.5925 27.3415 21.7273 26.1694 20.352C24.9973 18.9767 23.4076 18.2041 21.75 18.2041H9.25C7.5924 18.2041 6.00268 18.9767 4.83058 20.352C3.65848 21.7273 3 23.5925 3 25.5374V29.2041" />
+                                <path
+                                    d="M28 29.2041V25.5374C28 23.5925 27.3415 21.7273 26.1694 20.352C24.9973 18.9767 23.4076 18.2041 21.75 18.2041H9.25C7.5924 18.2041 6.00268 18.9767 4.83058 20.352C3.65848 21.7273 3 23.5925 3 25.5374V29.2041H28Z"
+                                    stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.5 15.2041C19.0899 15.2041 22 12.294 22 8.7041C22 5.11425 19.0899 2.2041 15.5 2.2041C11.9101 2.2041 9 5.11425 9 8.7041C9 12.294 11.9101 15.2041 15.5 15.2041Z"
+                                    stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2001_2292">
+                                    <rect width="30" height="30" transform="translate(0.539062 0.527344)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <button class="menu__button " id="MenuToggle">
+                <div class="menu__button--text">
+                    меню
+                </div>
+                <div class="menu__button--icon">
+                </div>
+            </button>
+
+            <div class="menu__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="122" viewBox="0 0 39 122" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 122L-6.00188e-07 108.269C-8.9849e-07 101.445 5.50863 95.9127 12.3039 95.9127C19.0991 95.9127 24.6078 101.445 24.6078 108.269L24.6078 118.864L38.51 118.864L38.51 122L23.0469 122C23.0469 122 23.0465 122 23.0465 120.432L23.0469 122L0 122ZM21.4853 118.864L21.4853 108.269C21.4853 103.177 17.3747 99.0485 12.3039 99.0485C7.23311 99.0485 3.12243 103.177 3.12243 108.269L3.12244 118.864L21.4853 118.864Z"
+                        fill="#131313" />
+                    <path d="M38.51 79.9223L1.56122 79.9223L1.56122 76.7865L38.51 76.7865L38.51 79.9223Z" fill="#131313" />
+                    <path
+                        d="M1.56121 59.521L1.56121 56.3851L35.3876 56.3851L35.3876 40.1019L38.51 40.1019L38.51 59.521L1.56121 59.521Z"
+                        fill="#131313" />
+                    <path
+                        d="M25.7631 0.0515736C32.803 0.0515733 38.51 5.78303 38.51 12.8531L38.51 28.5803L35.3876 28.5803L35.3876 12.8531C35.3876 7.51488 31.0786 3.18738 25.7631 3.18738C20.4476 3.18738 16.1386 7.51488 16.1386 12.8531L16.1386 16.5977L13.0161 16.5977L13.0161 12.8531C13.0161 5.78303 18.7231 0.0515739 25.7631 0.0515736Z"
+                        fill="#131313" />
+                    <path
+                        d="M-4.57362e-06 17.3677C-4.26634e-06 24.3975 5.67448 30.0963 12.6743 30.0963C19.6742 30.0963 25.3486 24.3975 25.3486 17.3677L25.3486 13.5791L22.2262 13.5791L22.2262 17.3677C22.2262 22.6656 17.9497 26.9605 12.6743 26.9605C7.39895 26.9605 3.12243 22.6656 3.12243 17.3677L3.12243 1.61977L-5.26199e-06 1.61977L-4.57362e-06 17.3677Z"
+                        fill="#131313" />
+                </svg>
+            </div>
+        </div>
+        <div class="menu__extra" id="ExtraMenu">
+            <div class="menu__extra--logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="30" viewBox="0 0 23 30" fill="none">
+                    <path
+                        d="M1.00036 28.0908H13.3851C18.0875 28.0908 21.8995 24.2788 21.8995 19.5763V19.5763C21.8995 14.8739 18.0875 11.0619 13.3851 11.0619H10.2889"
+                        stroke="#A9BEC9" stroke-width="2" />
+                    <path
+                        d="M21.8992 1H9.51448C4.81206 1 1 4.81206 1 9.51448V9.51448C1 14.2169 4.81206 18.029 9.51448 18.029H12.6107"
+                        stroke="#A9BEC9" stroke-width="2" />
+                </svg>
+            </div>
+
+            <ul class="menu__extra--category">
+                <li>
+                    <a href="#">
+                        Мужчины
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Женщины
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Дети
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Новости
+                    </a>
+                </li>
+            </ul>
+
+            <div class="separation"></div>
+
+            <ul class="menu__extra--category mb-10">
+                <li>
+                    <a href="#">
+                        Смотреть все
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="menu__extra--category">
+                <li>
+                    <a href="#">
+                        Свитшоты
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Футболки
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Лонги
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Шорты
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Нижнее бельё
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Носки
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <a href="/">
+                Главная
+            </a>
+            <a href="#">
+                Мужчинам
+            </a>
+            <!-- последний или <span> или <a> -->
+            <span>
+                T-SHIRT BANDANA LONG MOSS
+            <span/>
+        </div>
+        <div class="container">
+            <div class="account-data">
+                <div class="head">
+                    <h3>
+                        Данные аккаунта
+                    </h3>
+                </div>
+                <form action="kakoitoAction" class="account-data--block" id="editProfileForm">
+                    <div class="account-data--block__top">
+                        <label class="picture">
+                            <!--<img src="/assets/img/child_category.jpg" alt="profile">   Раскоментить если есть имг  -->
+                            <div class="stub">
+                                <svg viewBox="0 0 119 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_604_5679)">
+                                    <path d="M90 33C90 49.0163 77.2401 62 61.5 62C45.7599 62 33 49.0163 33 33C33 31.3532 33.1349 29.7385 33.3941 28.1667C33.5289 27.349 33.6973 26.5429 33.8979 25.75C37.0617 13.2421 48.2201 4 61.5 4C74.7799 4 85.9383 13.2421 89.1021 25.75C89.6883 28.0672 90 30.4966 90 33Z" fill="white"/>
+                                    </g>
+                                    <g filter="url(#filter1_d_604_5679)">
+                                    <path d="M8.78898 93.4466C8.35725 79.5222 19.5278 68 33.4588 68H89.5412C103.472 68 114.643 79.5222 114.211 93.4466C113.649 111.586 98.781 126 80.6326 126H42.3674C24.219 126 9.35141 111.586 8.78898 93.4466Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_604_5679" x="24.7" y="0.7" width="69.6" height="70.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="-2" dy="3"/>
+                                    <feGaussianBlur stdDeviation="3.15"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.662745 0 0 0 0 0.745098 0 0 0 0 0.788235 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_604_5679"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_604_5679" result="shape"/>
+                                    </filter>
+                                    <filter id="filter1_d_604_5679" x="0.477344" y="64.7" width="118.045" height="70.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="-2" dy="3"/>
+                                    <feGaussianBlur stdDeviation="3.15"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.662745 0 0 0 0 0.745098 0 0 0 0 0.788235 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_604_5679"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_604_5679" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="stub edit">
+                                <svg viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.6673 25.6669L22.0007 18.0002L14.334 25.6669" stroke="#AFB4B8" stroke-width="1.02083" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.002 18.0002V35.2502" stroke="#AFB4B8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M38.0826 30.2477C39.952 29.2285 41.4288 27.6159 42.2798 25.6642C43.1309 23.7125 43.3078 21.533 42.7827 19.4697C42.2575 17.4063 41.0601 15.5766 39.3795 14.2693C37.699 12.962 35.6309 12.2516 33.5018 12.2502H31.0868C30.5066 10.0062 29.4253 7.92298 27.9242 6.15708C26.423 4.39117 24.541 2.98855 22.4198 2.05467C20.2985 1.12079 17.9931 0.679944 15.677 0.765281C13.3608 0.850617 11.0941 1.45991 9.04734 2.54737C7.00055 3.63482 5.22692 5.17212 3.85978 7.04371C2.49264 8.91529 1.56758 11.0725 1.15413 13.353C0.740689 15.6336 0.849623 17.9782 1.47275 20.2106C2.09587 22.443 3.21697 24.5051 4.75176 26.2418" stroke="#AFB4B8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M29.6673 25.6669L22.0007 18.0002L14.334 25.6669" stroke="#AFB4B8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Добавить</span>
+                                <span>фото</span>
+                            </div>
+                            <input type="file" name="" hidden id="editImage" disabled>
+                        </label>
+                        <div class="profile-info">
+                            <h4>
+                                Иван иванов
+                            </h4>
+                            <div class="profile-info--info">
+                                <div class="info-block">
+                                    <div class="title">
+                                        Город:
+                                    </div>
+                                    <input type="text" name="city" id="editCity" placeholder="Город" value="Красноярск" disabled>
+                                </div>
+                                <div class="info-block">
+                                    <div class="title">
+                                        Дата рождения:
+                                    </div>
+                                    <input type="text" name="bday" id="editBday" placeholder="Дата рождения" value="23.07" disabled>
+                                </div>
+                                <div class="info-block">
+                                    <div class="title">
+                                        Телефон:
+                                    </div>
+                                    <input class="telType" type="tel" name="tel" id="editProfileTel" placeholder="Телефон" value="89837777777" disabled>
+                                </div>
+                                <div class="info-block">
+                                    <div class="title">
+                                        E-mail:
+                                    </div>
+                                    <input class="telType" required type="email" name="email" id="editMail" placeholder="E-mail" value="kkk@mail.com" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-data--block__bottom">
+                        <div class="default">
+                            <button type="button" class="btn edit" onclick="editProfile()">
+                                редактировать
+                            </button>
+                            <button class="btn">
+                                выйти
+                            </button>
+                        </div>
+                        <div class="edit">
+                            <button type="submit" class="btn colored">
+                                сохранить
+                            </button>
+                            <button type="button" class="btn" onclick="editProfile()">
+                                отменить
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="settings-nav">
+                <a class="active" href="settings-orders.html">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6697 18.871C11.6697 18.871 13.0454 5 19.6679 5C26.2903 5 27.6661 18.871 27.6661 18.871M6 15H33C34.6569 15 36 16.3441 36 18.001C36 23.3206 36 27.6794 36 32.999C36 34.6559 34.6569 36 33 36H6C4.34315 36 3 34.6569 3 33V18C3 16.3431 4.34314 15 6 15Z" stroke="#131313" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h5>
+                        Покупки
+                    </h5>
+                </a>
+                <a href="settings-favourite.html">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                            <g clip-path="url(#clip0_2001_2295)">
+                                <path
+                                    d="M5.59379 27.3548L4.06493 27.3548L4.06493 25.738L4.0649 9.33427C4.06493 5.60893 7.1314 2.58895 10.9141 2.58893C14.6967 2.58898 17.7632 5.60896 17.7632 9.33423L17.7632 12.8719V13.8642L18.7708 13.8642L22.2501 13.8642C26.0328 13.8643 29.0992 16.8842 29.0993 20.6095C29.0993 24.3349 26.0328 27.3548 22.2501 27.3549L5.59379 27.3548Z"
+                                    stroke="#131313" stroke-width="1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2001_2295">
+                                    <rect width="30" height="30" transform="translate(0.539062 0.527344)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h5>
+                        избранное
+                    </h5>
+                </a>
+                <a href="settings-payment.html">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.9483 17.3254H25.1664C22.7987 17.3254 20.8793 19.2448 20.8793 21.6124V21.6124C20.8793 23.9801 22.7987 25.8995 25.1664 25.8995H34.9483M34.9483 17.3254V17.3254C36.0814 17.3254 37 18.2439 37 19.3771V23.8478C37 24.9809 36.0814 25.8995 34.9483 25.8995V25.8995M34.9483 17.3254V13.4928C34.9483 11.836 33.6051 10.4928 31.9483 10.4928H31.431M34.9483 25.8995V30C34.9483 31.6569 33.6051 33 31.9483 33H6C4.34315 33 3 31.6569 3 30V13.4928C3 11.836 4.34315 10.4928 6 10.4928H10M16.5 10.4928H31.431M16.5 10.4928H13.1121H10M16.5 10.4928L24 6.5M31.431 10.4928L29.7794 6.08159C29.3629 4.9692 28.0744 4.46282 27.0119 4.99403L24 6.5M10 10.4928L19.8945 4.04606C20.7921 3.46124 21.9911 3.68753 22.6138 4.55928L24 6.5" stroke="black"/>
+                        </svg>
+                    </div>
+                    <h5>
+                        Способы оплаты
+                    </h5>
+                </a>
+                <a href="settings-delivery.html">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_87_3004" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9991 31.1667C19.9991 31.1667 30.6936 18.6008 30.6936 12.6944C30.6936 6.78807 25.9055 2 19.9991 2C14.0928 2 9.30469 6.78807 9.30469 12.6944C9.30469 18.6008 19.9991 31.1667 19.9991 31.1667ZM20 18C22.7614 18 25 15.7614 25 13C25 10.2386 22.7614 8 20 8C17.2386 8 15 10.2386 15 13C15 15.7614 17.2386 18 20 18Z"/>
+                            </mask>
+                            <path d="M19.9991 31.1667L19.2376 31.8148L19.9991 32.7096L20.7607 31.8148L19.9991 31.1667ZM29.6936 12.6944C29.6936 13.9253 29.1182 15.6417 28.1278 17.6259C27.1545 19.576 25.8464 21.6575 24.5229 23.578C23.2019 25.495 21.8789 27.2323 20.8852 28.4914C20.3887 29.1205 19.9753 29.629 19.6867 29.9795C19.5424 30.1548 19.4294 30.2904 19.3528 30.3818C19.3145 30.4275 19.2853 30.4622 19.2659 30.4852C19.2562 30.4966 19.2489 30.5052 19.2442 30.5108C19.2418 30.5136 19.2401 30.5157 19.239 30.5169C19.2384 30.5176 19.238 30.518 19.2378 30.5183C19.2377 30.5184 19.2376 30.5185 19.2376 30.5186C19.2376 30.5186 19.2376 30.5185 19.9991 31.1667C20.7607 31.8148 20.7608 31.8147 20.7609 31.8145C20.761 31.8143 20.7612 31.8141 20.7615 31.8139C20.7619 31.8134 20.7625 31.8127 20.7632 31.8118C20.7647 31.81 20.7668 31.8075 20.7696 31.8043C20.7752 31.7977 20.7832 31.7882 20.7938 31.7757C20.8148 31.7508 20.8457 31.7141 20.8857 31.6664C20.9658 31.5708 21.0825 31.4308 21.2306 31.2509C21.5269 30.8911 21.949 30.3718 22.4551 29.7305C23.4665 28.449 24.8172 26.6757 26.1698 24.7129C27.5199 22.7536 28.8855 20.5863 29.9173 18.5191C30.9321 16.486 31.6936 14.4168 31.6936 12.6944H29.6936ZM19.9991 3C25.3532 3 29.6936 7.34035 29.6936 12.6944H31.6936C31.6936 6.23578 26.4578 1 19.9991 1V3ZM10.3047 12.6944C10.3047 7.34035 14.645 3 19.9991 3V1C13.5405 1 8.30469 6.23578 8.30469 12.6944H10.3047ZM19.9991 31.1667C20.7607 30.5185 20.7607 30.5186 20.7607 30.5186C20.7606 30.5185 20.7606 30.5184 20.7605 30.5183C20.7602 30.518 20.7599 30.5176 20.7593 30.5169C20.7582 30.5157 20.7565 30.5136 20.7541 30.5108C20.7494 30.5052 20.7421 30.4966 20.7324 30.4852C20.713 30.4622 20.6838 30.4275 20.6455 30.3818C20.5689 30.2904 20.4559 30.1548 20.3116 29.9795C20.023 29.629 19.6096 29.1205 19.1131 28.4914C18.1193 27.2323 16.7963 25.495 15.4753 23.578C14.1519 21.6575 12.8438 19.576 11.8704 17.6259C10.88 15.6417 10.3047 13.9253 10.3047 12.6944H8.30469C8.30469 14.4168 9.06616 16.486 10.081 18.5191C11.1128 20.5863 12.4783 22.7536 13.8285 24.7129C15.1811 26.6757 16.5317 28.449 17.5432 29.7305C18.0493 30.3718 18.4714 30.8911 18.7676 31.2509C18.9158 31.4308 19.0325 31.5708 19.1125 31.6664C19.1526 31.7141 19.1835 31.7508 19.2045 31.7757C19.215 31.7882 19.2231 31.7977 19.2287 31.8043C19.2314 31.8075 19.2336 31.81 19.2351 31.8118C19.2358 31.8127 19.2364 31.8134 19.2368 31.8139C19.237 31.8141 19.2372 31.8143 19.2373 31.8145C19.2375 31.8147 19.2376 31.8148 19.9991 31.1667ZM24 13C24 15.2091 22.2091 17 20 17V19C23.3137 19 26 16.3137 26 13H24ZM20 9C22.2091 9 24 10.7909 24 13H26C26 9.68629 23.3137 7 20 7V9ZM16 13C16 10.7909 17.7909 9 20 9V7C16.6863 7 14 9.68629 14 13H16ZM20 17C17.7909 17 16 15.2091 16 13H14C14 16.3137 16.6863 19 20 19V17Z" fill="black" mask="url(#path-1-inside-1_87_3004)"/>
+                            <path d="M13 26C7.67153 26.9398 4 28.9192 4 31.2089C4 34.4072 11.1634 37 20 37C28.8366 37 36 34.4072 36 31.2089C36 28.9192 32.3285 26.9398 27 26" stroke="black" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h5>
+                        Адрес доставки
+                    </h5>
+                </a>
+            </div>
+        </div>
+    
+        <div class="orders">
+
+            <div class="head">
+                <h3>Покупки <span>3</span></h3>
+            </div>
+
+            <div class="orders__content">
+
+                <div class="product-item">
+                    <a href="#" class="product-item__img">
+                        <img src="/assets/img/man_category.jpg" alt="">
+                    </a>
+                    <div class="product-item__info">
+                        <div class="product-item__info--head">
+                            <a href="#" class="title">
+                                T-SHIRT BANDANA LONG MOSS
+                            </a>
+                            <div class="control">
+                                <span class="date">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="6.5" width="18" height="15" rx="2" stroke="#131313" />
+                                        <path d="M4 11.5H20" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M8 3.5L8 7.5" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M16 3.5L16 7.5" stroke="#131313" stroke-linecap="round" />
+                                    </svg>
+                                    29.01.24
+                                </span>
+                                <span class="time">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                                            stroke="#131313" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 6.5V12.5L16 14.5" stroke="#131313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    09:01
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="product-item__info--details">
+                            <div class="details">
+                                <div class="detail--size">
+                                    Размер:
+                                    <!-- Либо размер -->
+                                    <span>S</span>
+
+                                    <!-- Либо если индивид. размер то это -->
+                                    <!-- <div class="no-back">
+                                        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.2277 7.88009C10.2277 9.91383 8.42382 11.5625 6.19858 11.5625H1.24865V10.6605H6.19858C7.87874 10.6605 9.24077 9.41565 9.24077 7.88009C9.24077 6.34452 7.87874 5.0997 6.19859 5.0997H5.02003V4.19767H6.19859C8.42382 4.19767 10.2277 5.84635 10.2277 7.88009Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M4.77768 0.4375C2.56512 0.4375 0.771484 2.07678 0.771484 4.09893C0.771484 6.12108 2.56512 7.76036 4.77768 7.76036H5.97008V6.85833H4.77768C3.11021 6.85833 1.75845 5.62291 1.75845 4.09893C1.75845 2.57495 3.11021 1.33953 4.77768 1.33953L9.73416 1.33953V0.4375L4.77768 0.4375Z"
+                                                    fill="white"></path>
+                                            </svg></span>
+                                        <span>Не подлежит возврату</span>
+                                    </div> -->
+                                </div>
+                                <div class="detail--color">
+                                    Цвет: <span>Синий</span>
+                                </div>
+                                <div class="detail--count">
+                                    Кол-во: <span>1</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price--new">1 599 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__img">
+                        <img src="/assets/img/man_category.jpg" alt="">
+                    </a>
+                    <div class="product-item__info">
+                        <div class="product-item__info--head">
+                            <a href="#" class="title">
+                                T-SHIRT BANDANA LONG MOSS
+                            </a>
+                            <div class="control">
+                                <span class="date">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="6.5" width="18" height="15" rx="2" stroke="#131313" />
+                                        <path d="M4 11.5H20" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M8 3.5L8 7.5" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M16 3.5L16 7.5" stroke="#131313" stroke-linecap="round" />
+                                    </svg>
+                                    29.01.24
+                                </span>
+                                <span class="time">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                                            stroke="#131313" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 6.5V12.5L16 14.5" stroke="#131313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    09:01
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="product-item__info--details">
+                            <div class="details">
+                                <div class="detail--size">
+                                    Размер:
+                                    <!-- Либо размер -->
+                                    <span>S</span>
+
+                                    <!-- Либо если индивид. размер то это -->
+                                    <!-- <div class="no-back">
+                                        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.2277 7.88009C10.2277 9.91383 8.42382 11.5625 6.19858 11.5625H1.24865V10.6605H6.19858C7.87874 10.6605 9.24077 9.41565 9.24077 7.88009C9.24077 6.34452 7.87874 5.0997 6.19859 5.0997H5.02003V4.19767H6.19859C8.42382 4.19767 10.2277 5.84635 10.2277 7.88009Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M4.77768 0.4375C2.56512 0.4375 0.771484 2.07678 0.771484 4.09893C0.771484 6.12108 2.56512 7.76036 4.77768 7.76036H5.97008V6.85833H4.77768C3.11021 6.85833 1.75845 5.62291 1.75845 4.09893C1.75845 2.57495 3.11021 1.33953 4.77768 1.33953L9.73416 1.33953V0.4375L4.77768 0.4375Z"
+                                                    fill="white"></path>
+                                            </svg></span>
+                                        <span>Не подлежит возврату</span>
+                                    </div> -->
+                                </div>
+                                <div class="detail--color">
+                                    Цвет: <span>Синий</span>
+                                </div>
+                                <div class="detail--count">
+                                    Кол-во: <span>1</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price--new">1 599 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__img">
+                        <img src="/assets/img/man_category.jpg" alt="">
+                    </a>
+                    <div class="product-item__info">
+                        <div class="product-item__info--head">
+                            <a href="#" class="title">
+                                T-SHIRT BANDANA LONG MOSS
+                            </a>
+                            <div class="control">
+                                <span class="date">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="6.5" width="18" height="15" rx="2" stroke="#131313" />
+                                        <path d="M4 11.5H20" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M8 3.5L8 7.5" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M16 3.5L16 7.5" stroke="#131313" stroke-linecap="round" />
+                                    </svg>
+                                    29.01.24
+                                </span>
+                                <span class="time">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                                            stroke="#131313" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 6.5V12.5L16 14.5" stroke="#131313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    09:01
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="product-item__info--details">
+                            <div class="details">
+                                <div class="detail--size">
+                                    Размер:
+                                    <!-- Либо размер -->
+                                    <span>S</span>
+
+                                    <!-- Либо если индивид. размер то это -->
+                                    <!-- <div class="no-back">
+                                        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.2277 7.88009C10.2277 9.91383 8.42382 11.5625 6.19858 11.5625H1.24865V10.6605H6.19858C7.87874 10.6605 9.24077 9.41565 9.24077 7.88009C9.24077 6.34452 7.87874 5.0997 6.19859 5.0997H5.02003V4.19767H6.19859C8.42382 4.19767 10.2277 5.84635 10.2277 7.88009Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M4.77768 0.4375C2.56512 0.4375 0.771484 2.07678 0.771484 4.09893C0.771484 6.12108 2.56512 7.76036 4.77768 7.76036H5.97008V6.85833H4.77768C3.11021 6.85833 1.75845 5.62291 1.75845 4.09893C1.75845 2.57495 3.11021 1.33953 4.77768 1.33953L9.73416 1.33953V0.4375L4.77768 0.4375Z"
+                                                    fill="white"></path>
+                                            </svg></span>
+                                        <span>Не подлежит возврату</span>
+                                    </div> -->
+                                </div>
+                                <div class="detail--color">
+                                    Цвет: <span>Синий</span>
+                                </div>
+                                <div class="detail--count">
+                                    Кол-во: <span>1</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price--new">1 599 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__img">
+                        <img src="/assets/img/man_category.jpg" alt="">
+                    </a>
+                    <div class="product-item__info">
+                        <div class="product-item__info--head">
+                            <a href="#" class="title">
+                                T-SHIRT BANDANA LONG MOSS
+                            </a>
+                            <div class="control">
+                                <span class="date">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="6.5" width="18" height="15" rx="2" stroke="#131313" />
+                                        <path d="M4 11.5H20" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M8 3.5L8 7.5" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M16 3.5L16 7.5" stroke="#131313" stroke-linecap="round" />
+                                    </svg>
+                                    29.01.24
+                                </span>
+                                <span class="time">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                                            stroke="#131313" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 6.5V12.5L16 14.5" stroke="#131313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    09:01
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="product-item__info--details">
+                            <div class="details">
+                                <div class="detail--size">
+                                    Размер:
+                                    <!-- Либо размер -->
+                                    <span>S</span>
+
+                                    <!-- Либо если индивид. размер то это -->
+                                    <!-- <div class="no-back">
+                                        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.2277 7.88009C10.2277 9.91383 8.42382 11.5625 6.19858 11.5625H1.24865V10.6605H6.19858C7.87874 10.6605 9.24077 9.41565 9.24077 7.88009C9.24077 6.34452 7.87874 5.0997 6.19859 5.0997H5.02003V4.19767H6.19859C8.42382 4.19767 10.2277 5.84635 10.2277 7.88009Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M4.77768 0.4375C2.56512 0.4375 0.771484 2.07678 0.771484 4.09893C0.771484 6.12108 2.56512 7.76036 4.77768 7.76036H5.97008V6.85833H4.77768C3.11021 6.85833 1.75845 5.62291 1.75845 4.09893C1.75845 2.57495 3.11021 1.33953 4.77768 1.33953L9.73416 1.33953V0.4375L4.77768 0.4375Z"
+                                                    fill="white"></path>
+                                            </svg></span>
+                                        <span>Не подлежит возврату</span>
+                                    </div> -->
+                                </div>
+                                <div class="detail--color">
+                                    Цвет: <span>Синий</span>
+                                </div>
+                                <div class="detail--count">
+                                    Кол-во: <span>1</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price--new">1 599 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__img">
+                        <img src="/assets/img/man_category.jpg" alt="">
+                    </a>
+                    <div class="product-item__info">
+                        <div class="product-item__info--head">
+                            <a href="#" class="title">
+                                T-SHIRT BANDANA LONG MOSS
+                            </a>
+                            <div class="control">
+                                <span class="date">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="6.5" width="18" height="15" rx="2" stroke="#131313" />
+                                        <path d="M4 11.5H20" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M8 3.5L8 7.5" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M16 3.5L16 7.5" stroke="#131313" stroke-linecap="round" />
+                                    </svg>
+                                    29.01.24
+                                </span>
+                                <span class="time">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                                            stroke="#131313" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 6.5V12.5L16 14.5" stroke="#131313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    09:01
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="product-item__info--details">
+                            <div class="details">
+                                <div class="detail--size">
+                                    Размер:
+                                    <!-- Либо размер -->
+                                    <span>S</span>
+
+                                    <!-- Либо если индивид. размер то это -->
+                                    <!-- <div class="no-back">
+                                        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.2277 7.88009C10.2277 9.91383 8.42382 11.5625 6.19858 11.5625H1.24865V10.6605H6.19858C7.87874 10.6605 9.24077 9.41565 9.24077 7.88009C9.24077 6.34452 7.87874 5.0997 6.19859 5.0997H5.02003V4.19767H6.19859C8.42382 4.19767 10.2277 5.84635 10.2277 7.88009Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M4.77768 0.4375C2.56512 0.4375 0.771484 2.07678 0.771484 4.09893C0.771484 6.12108 2.56512 7.76036 4.77768 7.76036H5.97008V6.85833H4.77768C3.11021 6.85833 1.75845 5.62291 1.75845 4.09893C1.75845 2.57495 3.11021 1.33953 4.77768 1.33953L9.73416 1.33953V0.4375L4.77768 0.4375Z"
+                                                    fill="white"></path>
+                                            </svg></span>
+                                        <span>Не подлежит возврату</span>
+                                    </div> -->
+                                </div>
+                                <div class="detail--color">
+                                    Цвет: <span>Синий</span>
+                                </div>
+                                <div class="detail--count">
+                                    Кол-во: <span>1</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price--new">1 599 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__img">
+                        <img src="/assets/img/man_category.jpg" alt="">
+                    </a>
+                    <div class="product-item__info">
+                        <div class="product-item__info--head">
+                            <a href="#" class="title">
+                                T-SHIRT BANDANA LONG MOSS
+                            </a>
+                            <div class="control">
+                                <span class="date">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="6.5" width="18" height="15" rx="2" stroke="#131313" />
+                                        <path d="M4 11.5H20" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M8 3.5L8 7.5" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M16 3.5L16 7.5" stroke="#131313" stroke-linecap="round" />
+                                    </svg>
+                                    29.01.24
+                                </span>
+                                <span class="time">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                                            stroke="#131313" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 6.5V12.5L16 14.5" stroke="#131313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    09:01
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="product-item__info--details">
+                            <div class="details">
+                                <div class="detail--size">
+                                    Размер:
+                                    <!-- Либо размер -->
+                                    <span>S</span>
+
+                                    <!-- Либо если индивид. размер то это -->
+                                    <!-- <div class="no-back">
+                                        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.2277 7.88009C10.2277 9.91383 8.42382 11.5625 6.19858 11.5625H1.24865V10.6605H6.19858C7.87874 10.6605 9.24077 9.41565 9.24077 7.88009C9.24077 6.34452 7.87874 5.0997 6.19859 5.0997H5.02003V4.19767H6.19859C8.42382 4.19767 10.2277 5.84635 10.2277 7.88009Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M4.77768 0.4375C2.56512 0.4375 0.771484 2.07678 0.771484 4.09893C0.771484 6.12108 2.56512 7.76036 4.77768 7.76036H5.97008V6.85833H4.77768C3.11021 6.85833 1.75845 5.62291 1.75845 4.09893C1.75845 2.57495 3.11021 1.33953 4.77768 1.33953L9.73416 1.33953V0.4375L4.77768 0.4375Z"
+                                                    fill="white"></path>
+                                            </svg></span>
+                                        <span>Не подлежит возврату</span>
+                                    </div> -->
+                                </div>
+                                <div class="detail--color">
+                                    Цвет: <span>Синий</span>
+                                </div>
+                                <div class="detail--count">
+                                    Кол-во: <span>1</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price--new">1 599 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__img">
+                        <img src="/assets/img/man_category.jpg" alt="">
+                    </a>
+                    <div class="product-item__info">
+                        <div class="product-item__info--head">
+                            <a href="#" class="title">
+                                T-SHIRT BANDANA LONG MOSS
+                            </a>
+                            <div class="control">
+                                <span class="date">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="6.5" width="18" height="15" rx="2" stroke="#131313" />
+                                        <path d="M4 11.5H20" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M8 3.5L8 7.5" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M16 3.5L16 7.5" stroke="#131313" stroke-linecap="round" />
+                                    </svg>
+                                    29.01.24
+                                </span>
+                                <span class="time">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                                            stroke="#131313" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 6.5V12.5L16 14.5" stroke="#131313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    09:01
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="product-item__info--details">
+                            <div class="details">
+                                <div class="detail--size">
+                                    Размер:
+                                    <!-- Либо размер -->
+                                    <span>S</span>
+
+                                    <!-- Либо если индивид. размер то это -->
+                                    <!-- <div class="no-back">
+                                        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.2277 7.88009C10.2277 9.91383 8.42382 11.5625 6.19858 11.5625H1.24865V10.6605H6.19858C7.87874 10.6605 9.24077 9.41565 9.24077 7.88009C9.24077 6.34452 7.87874 5.0997 6.19859 5.0997H5.02003V4.19767H6.19859C8.42382 4.19767 10.2277 5.84635 10.2277 7.88009Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M4.77768 0.4375C2.56512 0.4375 0.771484 2.07678 0.771484 4.09893C0.771484 6.12108 2.56512 7.76036 4.77768 7.76036H5.97008V6.85833H4.77768C3.11021 6.85833 1.75845 5.62291 1.75845 4.09893C1.75845 2.57495 3.11021 1.33953 4.77768 1.33953L9.73416 1.33953V0.4375L4.77768 0.4375Z"
+                                                    fill="white"></path>
+                                            </svg></span>
+                                        <span>Не подлежит возврату</span>
+                                    </div> -->
+                                </div>
+                                <div class="detail--color">
+                                    Цвет: <span>Синий</span>
+                                </div>
+                                <div class="detail--count">
+                                    Кол-во: <span>1</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price--new">1 599 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__img">
+                        <img src="/assets/img/man_category.jpg" alt="">
+                    </a>
+                    <div class="product-item__info">
+                        <div class="product-item__info--head">
+                            <a href="#" class="title">
+                                T-SHIRT BANDANA LONG MOSS
+                            </a>
+                            <div class="control">
+                                <span class="date">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="6.5" width="18" height="15" rx="2" stroke="#131313" />
+                                        <path d="M4 11.5H20" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M8 3.5L8 7.5" stroke="#131313" stroke-linecap="round" />
+                                        <path d="M16 3.5L16 7.5" stroke="#131313" stroke-linecap="round" />
+                                    </svg>
+                                    29.01.24
+                                </span>
+                                <span class="time">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                                            stroke="#131313" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 6.5V12.5L16 14.5" stroke="#131313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    09:01
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="product-item__info--details">
+                            <div class="details">
+                                <div class="detail--size">
+                                    Размер:
+                                    <!-- Либо размер -->
+                                    <span>S</span>
+
+                                    <!-- Либо если индивид. размер то это -->
+                                    <!-- <div class="no-back">
+                                        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.2277 7.88009C10.2277 9.91383 8.42382 11.5625 6.19858 11.5625H1.24865V10.6605H6.19858C7.87874 10.6605 9.24077 9.41565 9.24077 7.88009C9.24077 6.34452 7.87874 5.0997 6.19859 5.0997H5.02003V4.19767H6.19859C8.42382 4.19767 10.2277 5.84635 10.2277 7.88009Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M4.77768 0.4375C2.56512 0.4375 0.771484 2.07678 0.771484 4.09893C0.771484 6.12108 2.56512 7.76036 4.77768 7.76036H5.97008V6.85833H4.77768C3.11021 6.85833 1.75845 5.62291 1.75845 4.09893C1.75845 2.57495 3.11021 1.33953 4.77768 1.33953L9.73416 1.33953V0.4375L4.77768 0.4375Z"
+                                                    fill="white"></path>
+                                            </svg></span>
+                                        <span>Не подлежит возврату</span>
+                                    </div> -->
+                                </div>
+                                <div class="detail--color">
+                                    Цвет: <span>Синий</span>
+                                </div>
+                                <div class="detail--count">
+                                    Кол-во: <span>1</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price--new">1 599 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="content-placeholder">
+            <div class="content-placeholder__title">
+                Пока нет покупок ;(
+            </div>
+            <div class="content-placeholder__icon">
+                <svg width="170" height="188" viewBox="0 0 170 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M26 38.6494L12 52.6494L2 186.649H154L168 172.649L158 38.6494H114.5H103.5H71H59.5H26Z"
+                        fill="#F1F1F1" />
+                    <path
+                        d="M12 52.6494L26 38.6494H59.5M12 52.6494L2 186.649H154M12 52.6494C13.898 53.2188 34.1824 53.3604 59.5 53.2986M144 52.6494L158 38.6494M144 52.6494L154 186.649M144 52.6494C132.771 52.782 118.494 52.9287 103.5 53.0503M158 38.6494L168 172.649L154 186.649M158 38.6494H114.5H103.5M59.5 71.6494V53.2986M103.5 71.6494V53.0503M71 38.6494H103.5M71 38.6494H59.5M71 38.6494V23.0002C71 10.8499 80.8497 1.00022 93 1.00022V1.00022C105.15 1.00022 115 10.85 115 23.0002V38.6494M59.5 38.6494V37.6494C59.5 25.4991 69.3497 15.6494 81.5 15.6494V15.6494C93.6503 15.6494 103.5 25.4991 103.5 37.6494V38.6494M59.5 38.6494V53.2986M103.5 38.6494V53.0503M59.5 53.2986C73.3869 53.2647 88.7882 53.1695 103.5 53.0503"
+                        stroke="#8D8D8D" stroke-width="2" />
+                    <path
+                        d="M68.3952 138H85.9766C92.399 138 97.6055 132.794 97.6055 126.371V126.371C97.6055 119.949 92.399 114.742 85.9766 114.742H81.3775"
+                        stroke="#A9BEC9" stroke-width="2" />
+                    <path
+                        d="M97.6048 101H80.0234C73.601 101 68.3945 106.206 68.3945 112.629V112.629C68.3945 119.051 73.601 124.258 80.0234 124.258H84.6225"
+                        stroke="#A9BEC9" stroke-width="2" />
+                </svg>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__main--title">
+                #PILSPEOPLE
+            </div>
+            <div class="footer__main--links">
+                <a href="tel:+79839998899">
+                    8 (983) 999 - 88 - 99
+                </a>
+                <a href="mailto:">
+                    PILSPEOPLE@mail.ru
+                </a>
+            </div>
+            <div class="footer__main--subscribe">
+                Подписаться на рассылку
+                <button>
+                    E-mail
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none">
+                        <path d="M0.99707 0.789551L8.36762 6.62457C10.2224 8.09297 10.2224 10.9073 8.36762 12.3757L0.99707 18.2108" stroke="#131313" stroke-width="2"/>
+                        </svg>
+                </button>
+            </div>
+        </div>
+        <div class="footer__menu">
+            <div class="footer__menu--links">
+                <ul>
+                    <li class="mob-dis">
+                        <a href="#" >Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#">Мужчины</a>
+                    </li>
+                    <li>
+                        <a href="#">Женщины</a>
+                    </li>
+                    <li>
+                        <a href="#">Дети</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Свитшоты</a>
+                    </li>
+                    <li>
+                        <a href="#">Футболки</a>
+                    </li>
+                    <li>
+                        <a href="#">Лонги</a>
+                    </li>
+                    <li>
+                        <a href="#">Шорты</a>
+                    </li>
+                    <li>
+                        <a href="#">Нижнее бельё</a>
+                    </li>
+                    <li>
+                        <a href="#">Носки</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu--policy">
+                <p>
+                    <a href="#">
+                        Политика в отношении обработки персональных данных
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Условия доставки и оплаты товаров, возврат и гарантии,сертификаты.
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer__social">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_2051_5212)">
+                        <path
+                            d="M38.3306 10.5816C37.9226 11.8732 37.3257 13.0986 36.5591 14.2187L36.59 14.1704C35.8618 15.3726 34.9923 16.7615 33.9814 18.3372C33.1147 19.5812 32.6558 20.2253 32.6049 20.2693C32.3732 20.5566 32.2234 20.9002 32.1709 21.2643L32.1693 21.2755C32.2107 21.6036 32.3644 21.9076 32.6049 22.1369L33.255 22.855C36.733 26.396 38.6892 28.8369 39.1237 30.1775C39.2061 30.3977 39.2326 30.6346 39.2008 30.8674C39.1691 31.1001 39.0801 31.3215 38.9417 31.5122L38.9449 31.5074C38.7813 31.6746 38.5819 31.8032 38.3613 31.8837C38.1407 31.9643 37.9047 31.9947 37.6707 31.9727H37.6772H33.3931C32.8454 31.9727 32.3416 31.7827 31.9466 31.4671L31.9515 31.4703C31.3876 31.0124 30.87 30.5012 30.4059 29.944L30.3913 29.9247C29.6426 29.0864 28.9784 28.3807 28.3987 27.8075C26.468 25.9892 25.0432 25.0801 24.1244 25.0801C23.8278 25.0538 23.5313 25.1306 23.2857 25.2974L23.2906 25.2942C23.1851 25.4253 23.1077 25.5762 23.063 25.7379C23.0183 25.8995 23.0073 26.0685 23.0306 26.2345V26.228C22.9674 26.9793 22.9468 27.7334 22.9688 28.4869V28.4596V30.3256C23.015 30.5485 22.9991 30.7796 22.923 30.9943C22.8469 31.209 22.7133 31.3991 22.5365 31.5444L22.5349 31.546C21.7119 31.9144 20.8058 32.0626 19.9069 31.9759L19.928 31.9775C17.4677 31.9357 15.0655 31.2299 12.9801 29.936L13.037 29.9682C10.6323 28.532 8.57111 26.5956 6.99599 24.2928L6.95211 24.2251C5.42314 22.2053 4.07916 20.0543 2.93614 17.7978L2.82237 17.5499C2.06072 16.0887 1.39146 14.582 0.818456 13.0385L0.720942 12.7407C0.455273 11.9394 0.286158 11.1099 0.217118 10.2693L0.213867 10.229C0.213867 9.41541 0.697105 9.0086 1.66358 9.0086H5.93796C6.37009 8.97508 6.79906 9.10446 7.13901 9.37086L7.13576 9.36764C7.46081 9.72024 7.70134 10.1533 7.81998 10.6364L7.82486 10.6557C8.53101 12.6591 9.39336 14.6051 10.4041 16.476L10.2952 16.2554C11.0257 17.7254 11.9098 19.1155 12.933 20.4029L12.8956 20.353C13.7624 21.407 14.4385 21.934 14.9239 21.934L14.9759 21.9357C15.0902 21.9358 15.2025 21.9061 15.3015 21.8496C15.4005 21.7931 15.4827 21.7117 15.5399 21.6136L15.5415 21.6104C15.6971 21.2069 15.7588 20.7738 15.7219 20.3433V20.353V14.1076C15.6915 13.3995 15.5145 12.7052 15.2018 12.0677L15.2148 12.0983C15.0252 11.6931 14.779 11.3165 14.4835 10.9793L14.4883 10.9857C14.2158 10.7162 14.0385 10.3666 13.9829 9.98912L13.9813 9.97946C13.9813 9.70575 14.108 9.45942 14.3063 9.29841L14.3079 9.2968C14.512 9.11168 14.7789 9.00937 15.0555 9.01021H21.8068C21.9762 8.99062 22.148 9.01302 22.3065 9.07541C22.4651 9.13779 22.6056 9.23821 22.7153 9.36764L22.7169 9.36925C22.9222 9.745 23.012 10.172 22.9753 10.5977V10.5897V18.9184C22.9494 19.2469 23.0266 19.5753 23.1964 19.8587L23.1931 19.8523C23.2526 19.9404 23.3331 20.0126 23.4275 20.0626C23.5219 20.1126 23.6273 20.1388 23.7343 20.1388C24.0084 20.1212 24.2744 20.0311 24.5014 19.878L24.4966 19.8812C24.9386 19.5802 25.3189 19.2372 25.6488 18.8492L25.6553 18.8412C26.6594 17.7157 27.5596 16.5033 28.3451 15.2185L28.4085 15.1058C28.9676 14.1881 29.5722 13.0579 30.1199 11.897L30.2206 11.6603L30.9455 10.2242C31.0731 9.85286 31.3193 9.53277 31.6468 9.3123C31.9743 9.09184 32.3654 8.98297 32.7609 9.00216H32.756H37.032C38.187 9.00216 38.6204 9.52865 38.3322 10.5816H38.3306Z"
+                            fill="#131313" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2051_5212">
+                            <rect width="40" height="40" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_2051_5216)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.8945 6.38784C32.2633 6.22428 32.667 6.16788 33.0636 6.22448C33.4602 6.28109 33.8351 6.44865 34.1494 6.70971C34.4636 6.97077 34.7057 7.3158 34.8504 7.70888C34.9951 8.10196 35.0372 8.52872 34.9723 8.94475L31.587 30.5778C31.2586 32.6645 29.0853 33.8612 27.2688 32.8218C25.7493 31.9522 23.4925 30.6124 21.4625 29.2144C20.4475 28.5147 17.3384 26.2738 17.7205 24.6793C18.0488 23.3159 23.273 18.1927 26.2583 15.1467C27.43 13.9501 26.8957 13.2597 25.512 14.3605C22.0745 17.0935 16.5592 21.2497 14.7352 22.4196C13.1262 23.4512 12.2873 23.6273 11.2843 23.4512C9.45429 23.1304 7.75718 22.6335 6.37202 22.0281C4.50026 21.2103 4.59131 18.4993 6.37053 17.7099L31.8945 6.38784Z" fill="#131313"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2051_5216">
+                        <rect width="40" height="40" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="/assets/js/joi.js"></script>
+    <script src="/assets/js/nice-select2.js"></script>
+    <!-- Скачайте библу и добавьте напрямую в проект если нужно -->
+    <script src="/assets/js/imask.js"></script>
+    <script src="/assets/js/script.min.js"></script>
+
+</body>
+
+</html>
