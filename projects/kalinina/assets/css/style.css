@@ -1,0 +1,1591 @@
+/* fonts */
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'), 
+	url('../fonts/Montserrat/Montserrat-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat/Montserrat-SemiBold.woff') format('woff'), 
+	url('../fonts/Montserrat/Montserrat-SemiBold.ttf')  format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+	url('../fonts/Roboto/Roboto-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Roboto/Roboto-Medium.woff') format('woff'),
+	url('../fonts/Roboto/Roboto-Medium.ttf')  format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+/* main set up */
+
+body {
+	font-family: 'Montserrat';
+	color: #1a1a1a;
+	margin: 0;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #1a1a1a;
+}
+
+a:visited {
+	color: #1a1a1a;
+}
+
+button {
+	cursor: pointer;
+}
+
+h1 { 
+	font-weight: 600;
+	font-size: 32px;
+	text-align: left;
+	margin: 45px 10px ;
+}
+
+h2 { 
+	font-weight: 600;
+	font-size: 32px;
+	text-align: center;
+	margin: 35px 10px;
+	line-height: 39px;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 18px;
+	font-weight: normal;
+	margin: -15px 0 22px 0;
+}
+
+p {
+	line-height: normal;
+}
+
+form {
+	display: contents;
+}
+
+/* input animation */
+
+input {
+	cursor: pointer
+}
+
+input::-webkit-input-placeholder {
+	opacity: 1; 
+	transition: opacity 0.2s ease;
+}
+
+input::-moz-placeholder {
+	opacity: 1; 
+	transition: opacity 0.2s ease;
+}
+
+input:-moz-placeholder {
+	opacity: 1; 
+	transition: opacity 0.2s ease;
+}
+
+input:-ms-input-placeholder {
+	opacity: 1; 
+	transition: opacity 0.2s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+	opacity: 0; 
+	transition: opacity 0.2s ease;
+}
+
+input:focus::-moz-placeholder {
+	opacity: 0; 
+	transition: opacity 0.2s ease;
+}
+
+input:focus:-moz-placeholder {
+	opacity: 0; 
+	transition: opacity 0.2s ease;
+}
+
+input:focus:-ms-input-placeholder {
+	opacity: 0; 
+	transition: opacity 0.2s ease;
+}
+
+/*  header */
+
+header {
+	height: 70px;
+	background-color: #fff;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.header__logo {
+	font-weight: 600;
+	font-size: 32px;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.header__location {
+	font-size: 24px;
+	display: inline-block;
+	margin: 0 40px 0 30px;
+}
+
+.header__location img {
+	margin: 0 12px -4px 0;
+}
+
+.header__sales-department {
+	font-size: 24px;
+	display: inline-block;
+	margin: 0 46px 0 40px;
+}
+
+header form {
+	display: inline-block;
+}
+
+.header__btn {
+	margin: 0 0 0 40px;
+	display: inline-block;
+	background-color: #5f3171;
+	width: 260px;
+	height: 40px;
+	color: #f8f4f9;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	text-transform: lowercase;
+	line-height: 40px; 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+/* slider */
+
+.slide {
+	background-position: center;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height: 721px;
+}
+
+.slide img {
+
+}
+
+
+.top-slider .slick-dots{
+	bottom:38px;
+	z-index: 100;
+}
+
+.top-slider .slick-dots li{
+	margin:0 11px;
+	width:37px;	
+}
+
+.top-slider .slick-dots li button{
+	display: inline-block;
+	width: 20px;
+    height: 20px;
+    border: solid white 3px;
+    border-radius: 15px;
+}
+
+.top-slider .slick-dots li.slick-active button{
+    border: solid #753c8c 3px;
+    padding: 4px;
+    background-color: white;
+    background-clip: content-box;
+}
+
+.top-slider .slick-dots li button:before {
+	content: '';
+}
+
+.text-slide {
+	font-size: 30px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	margin-top: 390px;
+	text-align: center;
+	width: 100%;
+}
+
+.top-slider .slick-slide {
+	position: relative;
+	background-position: center;
+}
+
+
+/* slide text */
+
+.slider__text h2 { 
+	font-weight: 600;
+	font-size: 31px;
+	margin: 46px 0;
+}
+
+.slider__text p {
+	font-family: 'Roboto', sans-serif;
+	max-width: 690px;
+	font-size: 24px;
+	margin: 0 0 45px 0;
+}
+
+.slider__text h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 600px;
+	margin: 13px 0;
+	text-align: left;
+}
+
+.section__slider {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.slider__text {
+	position: absolute;
+	z-index: 1000;
+	margin-top: 10px;
+}
+
+.slider__fields input {
+	font-size: 18px;
+	color: #c6b8cc;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	padding-left: 40px;
+	width: 320px;
+	height: 40px;
+	margin: 20px 0;
+	border: none;
+}
+
+.slider__fields input::placeholder {
+	color: #c6b8cc;
+}
+
+.slider__fields .submit-btn {
+	width: 360px;
+	padding-left: 0;
+	text-align: center;
+	background-color: #5f3171;
+	color: #f8f4f9;
+	margin-top: 40px;
+	padding: 0;
+}
+
+.fields__control-msg {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	max-width: 420px;
+	color: #333333;
+}
+
+.fields__control-msg a {
+	text-decoration: underline;
+}
+
+/* plans */
+
+.plan__parent-box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.plan__parent-box > div {
+	width: 33%;
+}
+
+.section__plan button {
+	width: 260px;
+	height: 40px;
+	background-color: #c6b8cc;
+	text-transform: lowercase;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	display: block;
+	margin: 0px auto;
+}
+
+.plan__child-box {
+	height: 380px;
+}
+
+.plan__img-block {
+	height: 330px;
+	text-align: center;
+}
+
+.plan__img-block-sec-line {
+	height: 266px;
+	text-align: center;
+}
+
+.plan__request-all {
+	margin-top: -37px;
+	position: relative;
+}
+
+.btn-request-all {
+	width: 360px;
+	height: 40px;
+	background-color: #5f3171;
+	text-transform: lowercase;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	color: #fff;
+	line-height: 40px;
+}
+
+/* map */
+
+.map {
+	height: 400px;
+	width: 100%;
+}
+
+/* tours */
+
+.tours__fields {
+	display: flex;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.tours__fields input {
+	font-size: 18px;
+	background-color: #b8b8b8;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	display: inline-block;
+	padding-left: 20px;
+	width: 260px;
+	height: 40px;
+	margin: 0 20px;
+	text-transform: lowercase;
+	border: none;
+}
+
+.tours__fields input::placeholder {
+	color: #fff;
+} 
+
+.tours__fields input:first-child {
+	margin-left: 0px;
+}
+
+.tours__fields input:last-child  {
+	margin-right: 0px;
+}
+
+.tours__fields .submit-btn {
+	width: 260px;
+	text-align: center;
+	background-color: #5f3171;
+	color: #f8f4f9;
+	padding: 0;
+}
+
+/* advantages */
+
+.advantages__parents-box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.advantages__child-box {
+	width: 33%;
+	font-family: 'Roboto';
+	height: auto;
+    margin-bottom: 38px;
+}
+
+.advantages__child-box .child-box__img {
+	margin-right: 50px;
+	float: left;
+
+}
+
+.advantages__child-box .child-box__title {
+	width: 160px;
+	height: 100px;
+	margin-bottom: 20px;
+	float: left;
+	display: flex;
+	align-items: flex-end;
+}
+
+.advantages__child-box h4 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 0;
+	line-height: 30px;
+}
+
+.advantages__child-box .child-box__subtitle {
+	height: 100%;
+}
+
+.child-box__subtitle p {
+	float: left;
+	width: 360px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+/* mortgage */
+
+.section__mortgage h2 {
+	display: inline-block;
+	margin: 45px 30px;
+}
+
+.mortgage-choose {
+	margin: 0 auto;
+	width: 550px;
+}
+
+.mortgage-choose>div {
+	display: inline-block;
+}
+
+
+.first-btn {
+	color: #000!important;
+}
+
+.second-btn {
+	color: #808080!important;
+}
+
+
+.inactive-btn  {
+	color: #808080!important;
+}
+
+.active-btn  {
+	color: #000!important;
+}
+
+
+article,
+article:target ~ article:last-of-type{
+    display:none;
+}
+
+article:target,
+article:last-of-type{
+	display:block;
+}
+
+
+
+.anchor{
+  display: block;
+  height: 355px; /*same height as header*/
+  margin-top: -355px; /*same height as header*/
+  visibility: hidden;
+}
+
+.mortgage__inputs {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.mortgage__inputs form {
+	display: contents;
+}
+
+
+.mortgage__input-box {
+	width: 360px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.mortgage__input-box input {
+	font-size: 18px;
+	background-color: #b8b8b8;
+	color: #fff;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	padding-left: 20px;
+	width: 340px;
+	height: 40px;
+	margin: 7px 0 19px 0;
+	text-transform: lowercase;
+	border: none;
+}
+
+.mortgage__input-box label {
+	font-size: 16px;
+	margin: 7px 0;
+}
+
+.mortgage__btn {
+	width: 360px;
+	line-height: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	background-color: #5f3171;
+	color: #f8f4f9;
+	margin: 21px auto 11px;
+	text-transform: lowercase;
+	border: none;
+}
+
+.mortage__control-msg {
+	display: table;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 11px auto 40px;
+	color: #333333;
+}
+
+.mortage__control-msg a {
+	text-decoration: underline;
+}
+
+/* consideration */
+
+.section__consideration {
+	height: 340px;
+	background-color: #c6b8cc;
+}
+
+.consideration__text {
+	float: left;
+	width: 50%;
+}
+
+.consideration__text h2 {
+	text-align: left;
+	color: #fff;
+	margin: 35px 0;
+}
+
+.consideration__text p {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	margin: 0 0 17px;
+	line-height: 28px;
+}
+
+.consideration__img {
+	float: right;
+	width: 50%;
+	overflow: hidden;
+}
+
+.consideration__btn {
+	width: 360px;
+	line-height: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	background-color: #5f3171;
+	color: #f8f4f9;
+	margin: 20px 0;
+	text-transform: lowercase;
+	border: none;
+}
+
+/* gallery  */
+
+
+
+.gallery__slider .slick-prev:before {
+	content: url(img/before-arrow.png);
+	color: #5f3171;
+	font-size: 30px;
+}
+
+.gallery__slider .slick-next:after {
+	content: url(img/after-arrow.png);
+	color: #5f3171;
+	font-size: 30px;
+}
+
+.gallery__slider .slick-next {
+	right: -60px;
+}
+
+.gallery__slider .slick-prev {
+	left: -60px;
+}
+
+/* gallery img */
+
+
+
+.gallery-slide {
+	background-position: center;
+	margin: 0 auto 20px;
+	background-repeat: no-repeat;
+	width: 25%;
+	height: 360px;
+	background-size: cover;
+}
+
+.gallery-slide img {
+	width: 100%;
+	height: 360px;
+}
+
+/* footer */
+
+footer {
+	margin-top: 20px;
+	height: 497px;
+	background-color: #1f1f1f;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:visited {
+	color: #fff;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.footer__text {
+	max-width: 50%;
+	height: 497px;
+	color: #fff;
+	overflow: auto;
+	font-family: 'Roboto';
+	float: left;
+}
+
+.footer__text p {
+	margin-bottom: 15px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.footer__text h2 {
+	margin: 35px 0;
+}
+
+.footer__text h3 {
+	margin: 0px 0 25px;
+	font-size: 24px;
+	text-align: left;
+	line-height: 28px;
+}
+
+.footer__map {
+	width: 50%;
+	max-width: 960px;
+	height: 497px;
+	float: right;
+}
+
+
+.footer__btn {
+	width: 260px;
+	line-height: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	background-color: #5f3171;
+	color: #f8f4f9;
+	margin: 10px auto 15px;
+	text-transform: lowercase;
+	border: none;
+}
+
+.social-web {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.social-web:first-child {
+	margin-left: 0;
+}
+
+
+/* modal */
+
+.modal {
+	position: fixed; /* фиксированное положение */
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5); /* цвет фона */
+	z-index: 1050;
+	opacity: 0; /* по умолчанию модальное окно прозрачно */
+	-webkit-transition: opacity 200ms ease-in;
+	-moz-transition: opacity 200ms ease-in;
+	transition: opacity 200ms ease-in; /* анимация перехода */
+	pointer-events: none; /* элемент невидим для событий мыши */
+}
+
+/* при отображении модального окно */
+
+.modal:target {
+	opacity: 1;
+	pointer-events: auto;
+	overflow-y: auto;
+}
+
+/* ширина модального окна и его отступы от экрана */
+
+.modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 10px;
+	top: 25%;
+}
+
+
+/* свойства для блока, содержащего контент модального окна */
+
+.modal-content {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background-color: #fff;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: .3rem;
+	outline: 0;
+}
+
+
+
+/* свойства для заголовка модального окна */
+
+.modal-header {
+	display: block;
+	float: right;
+	padding: 15px;
+}
+
+.modal-title {
+	margin-bottom: 0;
+}
+
+
+.modal-subtitle {
+	font-family: 'Roboto';
+	font-weight: normal;
+	margin: 25px 0 5px;
+}
+
+.thank-modal-subtitle {
+	margin: 25px;
+}
+
+/* свойства для кнопки "Закрыть" */
+
+.close {
+	line-height: 1;
+	text-decoration: none;
+	z-index: 1060;
+}
+
+.close-btn {
+	position: absolute;
+    top: 20px;
+    right: 20px;
+	width: 32px;
+	height: 32px;
+}
+
+.close-btn:hover {
+	opacity: 1;
+}
+
+.close-btn:before, .close-btn:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 27px;
+	width: 2px;
+	background-color: #333;
+}
+
+.close-btn:before {
+	transform: rotate(45deg);
+}
+
+.close-btn:after {
+	transform: rotate(-45deg);
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+
+.close:focus, .close:hover {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: .75;
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+
+.modal-body {
+	position: relative;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 0 15px 15px;
+	overflow: auto;
+	margin-top: -15px;
+	text-align: center;
+}
+
+.modal-body input {
+	background-color: #fff;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	color: #666666;
+	padding-left: 40px;
+	width: 100%;
+	max-width: 360px;
+	height: 40px;
+	margin: 20px auto;;
+	border: solid #6f6f6f 1px;
+}
+
+
+.modal-body .submit-btn {
+	width: 100%;
+	max-width: 400px;
+	padding: 0;
+	background-color: #5f3171;
+	color: #fff;
+}
+
+.modal__control-msg {
+	text-align: center;
+	font-family: 'Roboto';
+	width: 100%;
+	max-width: 440px;
+	margin: 0 auto 25px;
+}
+
+.modal__control-msg a {
+	text-decoration: underline;
+
+}
+
+
+/* media query */
+
+@media screen and (max-width: 1300px) {
+
+}
+
+@media screen and (max-width: 1300px) {
+	.gallery__slider .slick-next {
+		display: none!important;;
+	}
+
+	.gallery__slider .slick-prev {
+		display: none!important;;
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.header__btn {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1160px) {
+	.header__sales-department {
+		margin: 0 23px 0 20px;
+	}
+
+	.header__location {
+		margin: 0 20px 0 15px;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.header__btn {
+		width: 180px;
+		float: right;	
+	}
+}
+
+@media screen and (max-width: 1125px) {
+	.mortgage__input-box input {
+		max-width: 340px;
+	}
+
+	.mortgage__input-box {
+		margin: 0 20px;
+	}
+	.mortgage__inputs {
+		justify-content: center;
+	}
+
+	.advantages__child-box {
+		width: 380px;
+	}
+
+	.consideration__text p {
+		font-size: 20px;
+		padding-right: 5px;
+	}
+
+	.consideration__text h2 {
+		font-size: 28px;
+	}
+
+	.tours__fields input {
+		margin: 0 10px;
+	}
+}
+
+@media screen and (max-width: 1125px) {
+	.plan__parent-box {
+		justify-content: center;
+	}
+
+	.plan__parent-box > div {
+		width: auto;
+	}
+
+	.plan__child-box:nth-child(4) > .plan__img-block-sec-line:first-child {
+		height: 330px;
+	}
+
+	.consideration__img img {
+		position: relative;
+		left: -70px; 
+	}
+
+	.mortgage__btn {
+		margin: 21px 20px 11px;
+		line-height: normal;
+		padding: 10px 0;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+
+	.slider__text p {
+		font-size: 20px;
+	}
+
+	.header__logo {
+		margin-right: 15px;
+		float: left;
+		font-size: 28px;
+	}
+
+	.header__location {
+		display: block;
+		font-size: 18px;
+		margin: 0 0 0 265px;
+		padding-top: 7px;
+		width: 155px;
+		position: absolute;
+	}
+
+	.header__location img {
+		width: 9%;
+	}
+
+	.header__sales-department {
+		font-size: 18px;
+		margin: 0px 0 0 433px;
+		display: block;
+		padding-top: 7px;
+		width: 150px;
+		position: absolute;
+	}
+
+	.tours__fields {
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.tours__fields input {
+		width: 240px;
+		margin: 15px 10px;
+	}
+
+	.tours__fields input:first-child {
+		margin-left: 10px;
+	}
+
+	.tours__fields input:last-child {
+		margin-right: 10px;
+	}
+
+	.consideration__text h2 {
+		margin: 25px 0;
+		font-size: 28px;
+	}
+
+	.footer__text h3 {
+		font-size: 20px;
+	}
+
+	.mortgage-choose {
+		width: 500px;
+	}
+}
+
+@media (min-width: 850px) {
+	.modal-dialog {
+		max-width: 800px;
+		margin: 30px auto;
+	}
+}
+
+@media (max-width: 815px) {
+	header {
+		height: 90px;
+	}
+	.header__btn {
+		width: 260px;
+		position: absolute;
+		left: 21px;
+		top: 67px;
+	}
+
+	.header__location {
+		margin: 0px ;
+		left: 47%;
+	}
+
+	.header__location img {
+		margin: 0px 5px -4px 0;
+	}
+
+	.header__sales-department {
+		margin: 0px ;
+		left: 72%;
+	}
+
+	.mortgage__input-box input {
+		margin: 0px 0 5px 0;
+		width: 100%;
+	}
+
+	.mortage__control-msg {
+		display: block;
+		max-width: 385px;
+	}
+
+	.section__mortgage h3 {
+		margin-top: 0;
+	}
+
+	.advantages__child-box .child-box__img {
+		float: left;
+		width: 50%;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.advantages__child-box .child-box__title {
+		width: 45%;
+		padding-left: 15px;
+	}
+
+	.advantages__child-box .child-box__subtitle {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.consideration__img img {
+		left: -115px;
+	}
+
+	.plan__img-block-sec-line {
+		height: auto;
+	}
+
+
+	.plan__child-box {
+		height: auto;
+		padding-bottom: 10px;
+	}
+
+	.plan__child-box:last-child {
+		padding-bottom: 80px;
+	}
+
+	.consideration__text p {
+	    line-height: normal;
+	}
+
+	.consideration__text h2 {
+		margin: 25px 0;
+		font-size: 24px
+	}
+
+	.consideration__text p {
+		font-size: 16px;
+	}
+
+	.consideration__btn {
+		width: 260px;
+	}
+	
+	.plan__request-all {
+		padding: 0;
+	}
+
+	.modal__control-msg {
+		font-size: 12px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.modal-content {
+		-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	}
+}
+
+@media (max-width: 760px) {
+	.btn-request-all {
+		max-width: 260px;
+	}
+}
+
+@media (max-width: 759px) {
+	.plan__img-block {
+		height: auto;
+	}
+
+
+	.plan__child-box  img {
+		width: 80%;
+	}
+
+	.plan__child-box:nth-child(4) > .plan__img-block-sec-line:first-child {
+		height: auto;
+	}
+}
+
+@media (max-width: 700px) {
+	.slider__text p {
+		font-size: 18px;
+		max-width: 500px;
+	}
+
+	.slider__text h3 {
+		font-size: 16px;
+	}
+
+	.slider__fields input {
+		width: 240px;
+		padding-left: 20px;
+	}
+	
+	.slider__fields .submit-btn {
+		width: 260px;
+	}
+
+	.fields__control-msg {
+		font-size: 12px;
+		    max-width: 320px;
+	}
+
+	.header__sales-department {
+		position: static;
+		left: auto;
+		float: right;
+	}
+
+	.header__location {
+		position: static;
+		left: auto;
+		float: right;
+	}
+
+	.gallery-slide {
+		height: 260px;
+}
+
+	.gallery-slide img {
+		width: 250%;
+		height: 260px;
+	}
+}
+
+@media (max-width: 600px) {
+	.consideration__btn {
+		max-width: 260px;
+		width: 95%;
+		margin: 0 10px 0 0;
+	}
+
+	h2 {
+		line-height: normal;
+	}
+
+	.consideration__img img {
+		left: -175px;
+	}
+
+	.footer__text h2 {
+		margin: 20px 0;
+		font-size: 25px;
+	}
+
+	.footer__text h3 {
+		font-size: 18px;
+		line-height: normal;
+	}
+
+	.footer__text p {
+		font-size: 14px;
+	}
+
+	.footer__btn {
+		max-width: 260px;
+		width: 93%;
+	}
+}
+
+
+
+@media (max-width: 520px) {
+	.section__mortgage h2 {
+		display: block;
+		margin: 25px 10px;
+	}
+
+	.mortgage-choose {
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.child-box__subtitle p {
+		font-size: 16px;
+		max-width: 360px;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	.advantages__child-box h4 {
+		font-size: 18px;
+	}
+	
+	.advantages__child-box {
+		margin-bottom: 25px;
+	}
+
+}
+
+@media (max-width: 475px) {
+	.section__mortgage h2 {
+		display: block;
+		font-size: 24px;
+	}
+
+	.consideration__text h2 {
+		margin-top: 10px;
+		font-size: 20px;
+		line-height: normal;
+	}
+
+	.header__logo {
+		font-size: 20px;
+		margin: 0 0 14px;
+
+	}
+
+	.header__btn {
+		width: 188px;
+	}
+
+	.footer__map {
+		display: none;
+	}
+
+	.footer__text {
+		width: 66%;
+		float: none;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+
+	h1 { 
+		margin: 25px 0;
+		max-width: 300px;
+		width: 100%;
+	}
+
+	h2 { 
+		font-weight: 600;
+		font-size: 24px;
+		text-align: center;
+		margin: 20px 10px;
+		line-height: 39px;
+	}
+
+
+	h3 {
+		font-size: 16px;
+		margin: -15px 0 22px 0;
+	}
+
+	.slider__text p {
+		max-width: 300px;
+		width: 100%;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	.mortage__control-msg {
+		font-size: 12px;
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	.modal-body input {
+		width: 88%;
+	}
+
+	.header__location {
+		padding-top: 0;
+	}
+
+
+	.gallery-slide {
+		height: 260px;
+}
+
+	.gallery-slide img {
+		width: 250%;
+		height: 260px;
+	}
+
+}
+
+@media (max-width: 420px) {
+	.mortgage__btn {
+		margin: 21px 0px 11px 20px;
+	}
+
+	.footer__text {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.section__mortgage h2 {
+		display: block;
+		font-size: 20px;
+	}
+
+	.mortgage__inputs {
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.consideration__text p {
+		font-size: 14px
+	}
+
+	.advantages__child-box .child-box__img {
+		margin-right: 10px;
+	}
+
+	.consideration__img {
+		display: none;
+	}
+
+	.consideration__text h2 {
+		margin: 25px 0;
+		text-align: center;
+		font-size: 24px
+	}
+
+	.consideration__text p {
+		font-size: 17px;
+		margin-bottom: 40px;
+	}
+
+	.consideration__text {
+		text-align: center;
+		width: auto;
+	}
+
+	.modal-body input {
+		width: 86%;
+	}
+
+	.advantages__child-box .child-box__title {
+		width: 35%;
+	}
+
+
+	.header__location {
+		font-size: 14px;
+	}
+
+	.header__sales-department {
+		display: none;
+	}
+}
+
+@media (max-width: 381px) {
+
+	header {
+		height: 110px;
+		padding-top: 10px;
+	}
+
+	.header__location {
+		margin: 0 auto;
+		float: none;
+		margin: 5px auto;
+	}
+
+	.header__logo {
+		float: none;
+		margin: 0 0 5px;
+	}
+
+	.header__btn {
+		position: static;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.section__mortgage h2 {
+		display: block;
+		font-size: 18px;
+	}
+
+
+}
+
+@media (max-width: 350px) {
+	.child-box__img img {
+		width: 70%;
+	}
+
+	.advantages__child-box h4 {
+		font-size: 16px;
+		line-height: normal;
+	}
+
+	.advantages__child-box .child-box__title {
+		max-width: 160px;
+		height: 70px;
+	}
+
+	.advantages__child-box .child-box__img {
+		width: 35%;
+		margin-left: 30px;
+	}
+
+	.child-box__img img {
+		width: 100%;
+	}
+
+	.consideration__text p {
+		margin-bottom: 20px;
+	}
+
+	.advantages__child-box {
+		margin-bottom: 20px;
+	}
+
+	.modal-body input {
+		width: 84%;
+	}
+}
+

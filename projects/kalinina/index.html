@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ЖК Калинина 47Б</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="shortcut icon" href="" type="">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/plugins/slick-1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#">
+				<div class="header__logo">
+					ЖК Калинина 47Б
+				</div>
+			</a>
+			<div class="header__location">
+				<img src="assets/img/icon/place-localizer.png">Красноярск
+			</div>
+			<div class="header__sales-department">
+				<a href="#footer_anchor">Отдел продаж</a>
+			</div>
+				<form action="#feedback-modal">
+					<button class="header__btn">
+						Заказать звонок
+					</button >
+				</form>
+		</div>
+	</header>
+
+	<section class="section__slider">
+		<div class="container">
+			<div class="slider__text">
+				<h1>Жилой комплекс с развитой инфраструктурой</h1>
+				<div>
+					<p>ЖК Калинина 47Б - проект надежного застройщика Желдорипотека, срок сдачи которого - IV кв. 20 г.  Монолитно-кирпичные дома, квартиры с чистовой отделкой и близость к центру - главные преимущества жизни здесь. </p>
+				</div>
+				<h3>Получить бесплатную консультацию:</h3>
+				<div class="slider__fields">
+					<form action="">
+						<input type="text" placeholder="имя (обязательно)">
+						<input type="tel"  placeholder="телефон (обязательно)">
+						<input type="email" placeholder="e-mail">
+						<input type="submit" class="submit-btn" placeholder="отправить">
+					</form>
+					<div class="fields__control-msg">
+						Нажимая кнопку «Отправить» вы подтверждаете свое согласие на <a href="">обработку персональных данных</a>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<div class="top-slider">
+			<div class="slide"><img src="assets/img/top_slider/slide_1.jpg"></div>
+			<div class="slide slide_2"><img src="assets/img/top_slider/slide_1.jpg"></div>
+			<div class="slide slide_3"><img src="assets/img/top_slider/slide_1.jpg">	</div>
+		</div>
+	</section>
+
+	<section class="section__plan ">
+		<div class="container">
+			<h2>Планировочные решения</h2>
+			<div class="plan__parent-box">
+				<div class="plan__child-box">
+					<div class="plan__img-block">
+						<img src="assets/img/plans/plan1.jpg">
+					</div>
+					<form action="#reserve-modal">
+						<button>Забронировать квартиру</button>
+					</form>
+				</div>
+				<div class="plan__child-box">
+					<div  class="plan__img-block">
+						<img src="assets/img/plans/plan2.jpg">
+					</div>
+					<form action="#reserve-modal">
+						<button>Забронировать квартиру</button>
+					</form>
+				</div>
+				<div class="plan__child-box">
+					<div  class="plan__img-block">
+						<img src="assets/img/plans/plan3.jpg">
+					</div>
+					<form action="#reserve-modal">
+						<button>Забронировать квартиру</button>
+					</form>
+				</div>
+				<div class="plan__child-box">
+					<div  class="plan__img-block-sec-line">
+						<img src="assets/img/plans/plan4.jpg">
+					</div>
+					<form action="#reserve-modal">
+						<button>Забронировать квартиру</button>
+					</form>
+				</div>
+				<div class="plan__child-box">
+					<div  class="plan__img-block-sec-line">
+						<img src="assets/img/plans/plan5.jpg">
+					</div>
+					<form action="#reserve-modal">
+						<button>Забронировать квартиру</button>
+					</form>
+				</div>
+				<div class="plan__child-box">
+					<div  class="plan__img-block-sec-line">
+						<img src="assets/img/plans/plan6.jpg">
+					</div>
+					<form action="#reserve-modal">
+						<button>Забронировать квартиру</button>
+					</form>
+				</div>
+			</div>
+			<div class="plan__request-all container">
+				<a href="#request-modal">
+					<div class="btn-request-all">Запросить все планировки</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section__map">
+		<h2>ЖК Калинина 47Б на карте</h2>
+		<div class="map" id="map"></div>
+	</section>
+
+	<section class="section__tours">
+			<h2>Записаться на экскурсию</h2>
+			<h3>Оставьте заявку, и наш менеджер свяжется с Вами</h3>
+			<div class="tours__fields">
+				<form action="">
+					<input type="text" placeholder="Имя (обязательно)">
+					<input type="tel"  placeholder="Телефон (обязательно)">
+					<input type="email" placeholder="E-mail">
+					<input type="submit" class="submit-btn" placeholder="Отправить">
+				</form>
+			</div>
+	</section>
+
+	<section class="section__advantages">
+		<div class="container">
+			<h2>Преимущества проекта</h2>
+			<div class="advantages__parents-box">
+				<div class="advantages__child-box">
+					<div class="child-box__img">
+						<img src="assets/img/icon/bus.png" alt="Автобусная остановка">
+					</div>
+					<div class="child-box__title">
+						<h4>Автобусная остановка рядом</h4>
+					</div>
+					<div class="child-box__subtitle">
+						<p>До ближайшей остановки транспорта пройти пешком 2 минуты.</p>
+					</div>
+				</div>
+				<div class="advantages__child-box">
+					<div class="child-box__img">
+						<img src="assets/img/icon/house.png" alt="Дом">
+					</div>
+					<div class="child-box__title">
+						<h4>Развитая инфраструктура района</h4>
+					</div>
+					<div class="child-box__subtitle">
+						<p>В соседних домах работают магазины, аптеки, отделение связи, банк.</p>
+					</div>
+				</div>
+				<div class="advantages__child-box">
+					<div class="child-box__img">
+						<img src="assets/img/icon/school.png" alt="Школа и детские сады">
+					</div>
+					<div class="child-box__title">
+						<h4>Школы и детские сады рядом</h4>
+					</div>
+					<div class="child-box__subtitle">
+						<p>В пределах 1 остановки находится школа № 86, детские сады № 34, 32, 195. </p>
+					</div>
+				</div>
+				<div class="advantages__child-box">
+					<div class="child-box__img">
+						<img src="assets/img/icon/park.png" alt="Парк">
+					</div>
+					<div class="child-box__title">
+						<h4>Поблизости парк</h4>
+					</div>
+					<div class="child-box__subtitle">
+						<p>Недалеко находятся зеленые зоны – парк им. Гагарина, парки (Троя, Юннатов, Березовая роща), Центральный парк культуры и отдыха, ручей Серебряный и река Бугач.</p>
+					</div>
+				</div>
+				<div class="advantages__child-box">
+					<div class="child-box__img">
+						<img src="assets/img/icon/transport.png" alt="Транспорт">
+					</div>
+					<div class="child-box__title">
+						<h4>Развитая транспортная инфраструктура</h4>
+					</div>
+					<div class="child-box__subtitle">
+						<p>Дома жилого комплекса расположены между улицей Калинина и железной дорогой. Путь до центра города займет 10-15 минут.</p>
+					</div>
+				</div>
+				<div class="advantages__child-box">
+					<div class="child-box__img">
+						<img src="assets/img/icon/almost_ready.png" alt="Скоро сдача проекта">
+					</div>
+					<div class="child-box__title">
+						<h4>Высокая стадия готовности проекта</h4>
+					</div>
+					<div class="child-box__subtitle">
+						<p>Срок сдачи проекта - 4 квартал 2020 года.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section__mortgage">
+		<div class="container">
+			<div class="mortgage-choose">
+				<div class="choose-btn1">
+					<h2><a class="first-btn" href="#mortgage-first">Ипотека от 5%</a></h2>
+				</div>
+				<div class="choose-btn2">
+					<h2><a class="second-btn" href="#mortgage-second">Рассрочка</a></h2>
+				</div>
+				
+			</div>
+			<article id="mortgage-first">
+				<span class="anchor" id="mortgage-first"></span>
+				<h3>узнайте, как купить квартиру в ипотеку</h3>
+				<div class="mortgage__inputs">
+					<form action="">
+						<div class="mortgage__input-box">
+							<label for="cost">стоимость квартиры</label>
+							<input type="text" id="cost">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="payment">первоначальный взнос</label>
+							<input type="text" id="payment">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="loan">заемные средства</label>
+							<input type="text" id="loan">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="name">имя (обязательно)</label>
+							<input type="text" id="name">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="phone-number">телефон (обязательно)</label>
+							<input type="tel" id="phone-number">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="mail">e-mail</label>
+							<input type="email" id="mail">
+						</div>
+						<button class="mortgage__btn">
+							Получить бесплатную консультацию
+						</button>
+					</form>
+				</div>
+			</article>
+			<article id="mortgage-second">
+				<span class="anchor" id="mortgage-second"></span>
+				<h3>узнайте, как купить квартиру в рассрочку</h3>
+				<div class="mortgage__inputs">
+					<form action="">
+						<div class="mortgage__input-box">
+							<label for="cost">стоимость квартиры</label>
+							<input type="text" id="cost">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="payment">первоначальный взнос</label>
+							<input type="text" id="payment">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="loan">заемные средства</label>
+							<input type="text" id="loan">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="name">имя (обязательно)</label>
+							<input type="text" id="name">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="phone-number">телефон (обязательно)</label>
+							<input type="tel" id="phone-number">
+						</div>
+						<div class="mortgage__input-box">
+							<label for="mail">e-mail</label>
+							<input type="email" id="mail">
+						</div>
+						<button class="mortgage__btn">
+							Получить бесплатную консультацию
+						</button>
+					</form>
+				</div>
+			</article>
+			<div class="mortage__control-msg">
+				Нажимая кнопку «Отправить» вы подтверждаете свое согласие на <a href="">обработку персональных данных</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section__consideration">
+		<div class="container">
+			<div class="consideration__text">
+				<h2>Будут рассмотрены все предложения о покупке</h2>
+				<p>Рассмотрим каждую ситуацию индивидуально, с радостью поможем Вам приобрести жилье на выгодных для Вас условиях!</p>
+				<form action="#consultation-modal">
+					<button class="consideration__btn">
+						оставить заявку
+					</button>
+				</form>
+			</div>
+			<div class="consideration__img">
+				<img src="assets/img/picture/people.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="section__gallery">
+		<div class="container">
+			<h2>Галерея проекта</h2>
+			<div class="gallery__slider">
+				<div class="gallery-slide">
+					<img src="assets/img/gallery_slider/gallery_slide_1.jpg">
+				</div>
+				<div class="gallery-slide">
+					<img src="assets/img/gallery_slider/gallery_slide_2.jpg">
+				</div>
+				<div class="gallery-slide">
+					<img src="assets/img/gallery_slider/gallery_slide_3.jpg">
+				</div>
+				<div class="gallery-slide">
+					<img src="assets/img/gallery_slider/gallery_slide_4.jpg">
+				</div>
+				<div class="gallery-slide">
+					<img src="assets/img/gallery_slider/gallery_slide_2.jpg">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer_anchor">
+		<div class="container">
+			<div class="footer__text">
+				<h2>Отдел продаж</h2>
+				<h3>Ваш друг и эксперт на рынке недвижимости “РиМиР”</h3>
+				<p>Время работы: пн-пт:<br> с 10:00 до 17:00</p>
+				<p><a href="tel: +73912855549">+7 (391) 285-55-49</a></p>
+				<p><a href="mailto: rimir24@mail.ru">rimir24@mail.ru</a></p>
+				<p>г. Красноярск<br> ул. Маерчака, д. 16, офис 7-56</p>
+				<form action="#feedback-modal">
+					<button class="footer__btn">заказать звонок</button>
+				</form>
+				<div class="footer__social-webs">
+					<div class="social-web">
+						<a href="">
+							<img src="assets/img/icon/vk.png" alt="vk">
+						</a>
+					</div>
+					<div class="social-web">
+						<a href="">
+							<img src="assets/img/icon/facebook.png" alt="facebook">
+						</a>
+					</div>
+					<div class="social-web">
+						<a href="">
+							<img src="assets/img/icon/instagram.png" alt="instagram">
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer__map" id="footer__map">
+		</div>		
+	</footer>
+
+	    <!-- Modal form -->
+
+	<div id="feedback-modal" class="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					 <h2 class="modal-title">Обратный звонок</h2>
+					 <h3 class="modal-subtitle ">Оставьте заявку, и наш менеджер свяжется с Вами</h3>
+					<a href="#close" title="Close">
+						<div><span class="close-btn"></span></div>
+					</a>
+				</div>
+				<div class="modal-body">
+					<form action="#thanks-modal">
+						<input type="text" placeholder="имя (обязательно)">
+						<input type="tel"  placeholder="телефон (обязательно)">
+						<input type="submit" class="submit-btn" placeholder="отправить">
+					</form>
+					<div class="modal__control-msg">
+						Нажимая кнопку «Отправить» вы подтверждаете свое согласие на <a href="">обработку персональных данных</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="reserve-modal" class="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					 <h2 class="modal-title">Бронирование квартиры</h2>
+					 <h3 class="modal-subtitle ">Оставьте заявку, и наш менеджер свяжется с Вами</h3>
+					<a href="#close" title="Close">
+						<div><span class="close-btn"></span></div>
+					</a>
+				</div>
+				<div class="modal-body">
+					<form action="#thanks-modal">
+						<input type="text" placeholder="имя (обязательно)">
+						<input type="tel"  placeholder="телефон (обязательно)">
+						<input type="submit" class="submit-btn" placeholder="отправить">
+					</form>
+					<div class="modal__control-msg">
+						Нажимая кнопку «Отправить» вы подтверждаете свое согласие на <a href="">обработку персональных данных</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="request-modal" class="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					 <h2 class="modal-title">Запрос планировок</h2>
+					 <h3 class="modal-subtitle ">Оставьте заявку, и наш менеджер свяжется с Вами</h3>
+					<a href="#close" title="Close">
+						<div><span class="close-btn"></span></div>
+					</a>
+				</div>
+				<div class="modal-body">
+					<form action="#thanks-modal">
+						<input type="text" placeholder="имя (обязательно)">
+						<input type="tel"  placeholder="телефон (обязательно)">
+						<input type="submit" class="submit-btn" placeholder="отправить">
+					</form>
+					<div class="modal__control-msg">
+						Нажимая кнопку «Отправить» вы подтверждаете свое согласие на <a href="">обработку персональных данных</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="consultation-modal" class="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					 <h2 class="modal-title">Получить консультацию</h2>
+					 <h3 class="modal-subtitle ">Оставьте заявку, и наш менеджер свяжется с Вами</h3>
+					<a href="#close" title="Close">
+						<div><span class="close-btn"></span></div>
+					</a>
+				</div>
+				<div class="modal-body">
+					<form action="#thanks-modal">
+						<input type="text" placeholder="имя (обязательно)">
+						<input type="tel"  placeholder="телефон (обязательно)">
+						<input type="submit" class="submit-btn" placeholder="отправить">
+					</form>
+					<div class="modal__control-msg">
+						Нажимая кнопку «Отправить» вы подтверждаете свое согласие на <a href="">обработку персональных данных</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div id="thanks-modal" class="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					 <h2 class="modal-title">Спасибо за заявку!</h2>
+					 <h3 class="modal-subtitle thank-modal-subtitle">Оставьте заявку, и наш менеджер свяжется с Вами</h3>
+					<a href="#close" title="Close">
+						<div><span class="close-btn"></span></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/slick-1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$('.top-slider').slick({
+				lazyLoad: 'ondemand',  
+				dots: true, 
+				arrows: false,
+				autoplay: true,
+			});
+		});		
+	</script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$('.gallery__slider').slick({
+				lazyLoad: 'ondemand',
+				slidesToShow: 4, 
+				infinite: true, 
+				dots: false, 
+				arrows: true,
+				autoplay: true,
+			});
+		});		
+	</script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<568c2ca2-162c-40df-89b7-5426d6e34c7e>&lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/js/map.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		$( ".choose-btn2" ).on( "click", function() {
+		$('a.second-btn').addClass('active-btn') .removeClass('inactive-btn');
+		$('a.first-btn').addClass('inactive-btn') .removeClass('active-btn')
+			});
+		$( ".choose-btn1" ).on( "click", function() {
+		$('a.second-btn').removeClass('active-btn') .addClass('inactive-btn');
+		$('a.first-btn').removeClass('inactive-btn') .addClass('active-btn')
+	        });
+	
+		$("body" ).on( "click", ".topmenu.menu_show a.submenu-link",function(event) {
+			event.preventDefault();
+			$(this).parent().find('.submenu').slideToggle();
+			return false;
+			});
+		});
+	</script>
+
+</body>
+</html>
